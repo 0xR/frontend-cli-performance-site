@@ -11,7 +11,7 @@
     "build": "polymer build",
     "gcp-build": "echo gcp build && npm run build",
     "start": "polymer serve build/default",
-    "postinstall": "bower install"
+    "postinstall": "bower install --allow-root"
   },
   "keywords": [],
   "author": "",
