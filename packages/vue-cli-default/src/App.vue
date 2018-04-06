@@ -11,68 +11,34 @@
         </p>
       </header>
 
-      <table class="measurement-table">
-        <thead>
-          <tr>
-            <td></td>
-            <td><a href="/">Angular</a></td>
-            <td><a href="/">React</a></td>
-            <td><a href="/">VueJS</a></td>
-            <td><a href="/">Nuxt.js</a></td>
-            <td><a href="/">Polymer</a></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lighthouse Performance</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-          </tr>
-          <tr>
-            <td>First Meaningful Paint</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-          </tr>
-          <tr>
-            <td>First Interactive</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-          </tr>
-        </tbody>
-      </table>
+      <Table :report="report" />
     </main>
 
 
 </template>
 
 <script>
+  import Table from './components/Table';
   import './main.css';
 
   export default {
     name: 'app',
+    components: {
+      Table
+    },
+    data() {
+      return {
+        report: []
+      }
+    },
+    async created() {
+      this.report = await (await fetch('report.json')).json();
+    }
   }
 </script>
 
 <style>
   div {
     height: 100%;
-  }
-
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
   }
 </style>
