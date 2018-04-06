@@ -1,8 +1,9 @@
 cd packages
 
+
 for d in *
 do 
     cd $d
-    npm install
+    gcloud app deploy -q
     cd ..
 done

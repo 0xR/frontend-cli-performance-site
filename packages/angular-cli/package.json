@@ -4,8 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run build",
+    "dev": "ng serve",
     "build": "ng build --prod",
+    "gcp-build": "npm run build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
