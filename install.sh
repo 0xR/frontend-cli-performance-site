@@ -1,7 +1,10 @@
 cd packages/angular-cli
 npm install
 
-cd ../create-nuxt-app
+cd ../create-nuxt-app-spa
+npm install
+
+cd ../create-nuxt-app-universal
 npm install
 
 cd ../create-react-app
