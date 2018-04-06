@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run build",
+    "start": "http-server dist",
     "dev": "npm run serve",
     "serve": "vue-cli-service serve --open",
+    "gcp-build": "npm run build",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "http-server": "0.11.1",
     "vue": "^2.5.13"
   },
   "devDependencies": {
