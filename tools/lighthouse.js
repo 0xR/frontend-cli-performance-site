@@ -1,15 +1,55 @@
 const fs = require('fs');
 
-function summarize() {
-  const result = {};
-  result[angularReport.audits['first-meaningful-paint'].description] = angularReport.audits['first-meaningful-paint'].displayValue;
-  return result;
+function getReportPerProject(name) {
+  const data = require(`../packages/${name}/report.json`);
+  const getMetric = function (name){
+    return {
+      description: data.audits[name].description,
+      displayValue: data.audits[name].displayValue
+    }
+  };
+
+  const report = {};
+  const result = [];
+  const metrics = ['first-meaningful-paint', 'speed-index-metric', 'first-interactive', 'consistently-interactive'];
+  metrics.forEach((metric) => {
+    result.push(getMetric(metric));
+  });
+
+  report[name] = {
+    name: name,
+    metrics: result
+  };
+  return report;
 }
 
-const angularReport = require('../packages/angular-cli/report.json');
+function generateTotalReport() {
+  const results = [];
+  projects.forEach(project => {
+    results.push(getReportPerProject(project.name));
+  });
 
-const angularResults = summarize(angularReport);
-const results = [];
-results.push(angularResults);
+  return results;
+}
 
-fs.writeFileSync('./report.json', JSON.stringify(results, null, 2));
+// generate report per project
+const projects = [
+  {
+    name: 'angular-cli',
+    output: 'angular-cli/src/assets'
+  },
+  {
+    name: 'polymer-2-application',
+    output: 'polymer-2-application/src'
+  },
+  {
+    name: 'vue-cli-default',
+    output: 'vue-cli-default/public'
+  },
+];
+
+const totalReport = generateTotalReport();
+projects.forEach(project => {
+  fs.writeFileSync(`../packages/${project.output}/report.json`, JSON.stringify(totalReport, null, 2));
+});
+
