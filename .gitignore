@@ -3,4 +3,4 @@ yarn.lock
 yarn-error.log
 .idea/*
 packages/polymer-2-application/bower_components
-
+packages/create-react-app/build

@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "polymer build",
+    "start": "npm run build",
+    "dev": "polymer serve build/default",
+    "install": "polymer install",
+    "postinstall": "bower install --allow-root",
     "gcp-build": "echo gcp build && npm run build",
-    "start": "polymer serve build/default",
-    "postinstall": "bower install --allow-root"
+    "build": "polymer build"
   },
   "keywords": [],
   "author": "",
