@@ -1,7 +1,7 @@
 {
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",
   "lighthouseVersion": "2.9.4",
-  "generatedTime": "2018-04-06T12:46:15.318Z",
+  "generatedTime": "2018-04-06T13:45:17.605Z",
   "initialUrl": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
   "runWarnings": [],
@@ -73,24 +73,24 @@
       "helpText": "Your app should display some content when JavaScript is disabled, even if it's just a warning to the user that JavaScript is required to use the app. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/no-js)."
     },
     "first-meaningful-paint": {
-      "score": 92,
-      "displayValue": "1,960 ms",
-      "rawValue": 1964.3,
+      "score": 96,
+      "displayValue": "1,660 ms",
+      "rawValue": 1656.5,
       "extendedInfo": {
         "value": {
           "timestamps": {
-            "navStart": 176946684470,
-            "fCP": 176948648798,
-            "fMP": 176948648800,
-            "onLoad": 176948614205,
-            "endOfTrace": 176983644298
+            "navStart": 180519230073,
+            "fCP": 180520886568,
+            "fMP": 180520886569,
+            "onLoad": 180520858104,
+            "endOfTrace": 180526175843
           },
           "timings": {
             "navStart": 0,
-            "fCP": 1964.328,
-            "fMP": 1964.33,
-            "onLoad": 1929.735,
-            "endOfTrace": 36959.828
+            "fCP": 1656.495,
+            "fMP": 1656.496,
+            "onLoad": 1628.031,
+            "endOfTrace": 6945.77
           },
           "fmpFellBack": false
         }
@@ -110,11 +110,11 @@
           "firstRequestLatencies": [
             {
               "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-              "latency": "565.9"
+              "latency": "565.58"
             }
           ],
           "isFast": true,
-          "timeToFirstInteractive": 1964.33
+          "timeToFirstInteractive": 1656.496
         }
       },
       "scoringMode": "binary",
@@ -123,38 +123,74 @@
       "helpText": "A fast page load over a 3G network ensures a good mobile user experience. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/fast-3g)."
     },
     "speed-index-metric": {
-      "score": 93,
-      "displayValue": "1,965",
-      "rawValue": 1965,
+      "score": 96,
+      "displayValue": "1,674",
+      "rawValue": 1674,
       "extendedInfo": {
         "value": {
           "timings": {
-            "firstVisualChange": 1964,
-            "visuallyReady": 1964.5230000019073,
-            "visuallyComplete": 1976,
-            "perceptualSpeedIndex": 1964.6226976107716
+            "firstVisualChange": 1656,
+            "visuallyReady": 1721.1579999923706,
+            "visuallyComplete": 1821,
+            "perceptualSpeedIndex": 1674.2305171131459
           },
           "timestamps": {
-            "firstVisualChange": 176948648470,
-            "visuallyReady": 176948648993,
-            "visuallyComplete": 176948660470,
-            "perceptualSpeedIndex": 176948649092.69763
+            "firstVisualChange": 180520886073,
+            "visuallyReady": 180520951231,
+            "visuallyComplete": 180521051073,
+            "perceptualSpeedIndex": 180520904303.51712
           },
           "frames": [
             {
-              "timestamp": 176946684.47,
+              "timestamp": 180519230.073,
               "progress": 0
             },
             {
-              "timestamp": 176948076.363,
+              "timestamp": 180520456.134,
               "progress": 0
             },
             {
-              "timestamp": 176948648.993,
-              "progress": 99.17625705208518
+              "timestamp": 180520886.758,
+              "progress": 82.48800022042307
             },
             {
-              "timestamp": 176948661.096,
+              "timestamp": 180520901.506,
+              "progress": 83.23370241005684
+            },
+            {
+              "timestamp": 180520917.94,
+              "progress": 83.23370241005684
+            },
+            {
+              "timestamp": 180520935.047,
+              "progress": 83.23370241005684
+            },
+            {
+              "timestamp": 180520951.231,
+              "progress": 87.63378296330998
+            },
+            {
+              "timestamp": 180520967.798,
+              "progress": 90.04115638272553
+            },
+            {
+              "timestamp": 180520984.761,
+              "progress": 92.77938303799651
+            },
+            {
+              "timestamp": 180521001.315,
+              "progress": 95.09394997153449
+            },
+            {
+              "timestamp": 180521018.063,
+              "progress": 97.4325266860433
+            },
+            {
+              "timestamp": 180521034.637,
+              "progress": 97.4325266860433
+            },
+            {
+              "timestamp": 180521051.98,
               "progress": 100
             }
           ]
@@ -176,56 +212,56 @@
       "helpText": "This is what the load of your site looked like.",
       "details": {
         "type": "filmstrip",
-        "scale": 1976,
+        "scale": 1821,
         "items": [
           {
-            "timing": 198,
-            "timestamp": 176946882070,
+            "timing": 182,
+            "timestamp": 180519412173,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 395,
-            "timestamp": 176947079670,
+            "timing": 364,
+            "timestamp": 180519594273,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 593,
-            "timestamp": 176947277270,
+            "timing": 546,
+            "timestamp": 180519776373.00003,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 790,
-            "timestamp": 176947474870,
+            "timing": 728,
+            "timestamp": 180519958473.00003,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 988,
-            "timestamp": 176947672470,
+            "timing": 911,
+            "timestamp": 180520140573,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 1186,
-            "timestamp": 176947870070,
+            "timing": 1093,
+            "timestamp": 180520322673,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 1383,
-            "timestamp": 176948067670,
+            "timing": 1275,
+            "timestamp": 180520504773,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 1581,
-            "timestamp": 176948265270,
+            "timing": 1457,
+            "timestamp": 180520686873.00003,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 1778,
-            "timestamp": 176948462870,
+            "timing": 1639,
+            "timestamp": 180520868973.00003,
             "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
           },
           {
-            "timing": 1976,
-            "timestamp": 176948660470,
+            "timing": 1821,
+            "timestamp": 180521051073,
             "data": "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"
           }
         ]
@@ -255,7 +291,7 @@
           },
           {
             "percentile": 1,
-            "time": 23.455999999991036
+            "time": 19.941999999999098
           }
         ]
       },
@@ -291,13 +327,13 @@
       }
     },
     "time-to-first-byte": {
-      "score": false,
-      "displayValue": "660 ms",
-      "rawValue": 655.3439999988774,
-      "debugString": "Root document took 655 ms to get the first byte.",
+      "score": true,
+      "displayValue": "560 ms",
+      "rawValue": 563.0299999902495,
+      "debugString": "",
       "extendedInfo": {
         "value": {
-          "wastedMs": 55.34399999887739
+          "wastedMs": -36.97000000975049
         }
       },
       "scoringMode": "binary",
@@ -307,13 +343,13 @@
       "helpText": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://developers.google.com/web/tools/chrome-devtools/network-performance/issues)."
     },
     "first-interactive": {
-      "score": 98,
-      "displayValue": "1,960 ms",
-      "rawValue": 1964.33,
+      "score": 99,
+      "displayValue": "1,660 ms",
+      "rawValue": 1656.496,
       "extendedInfo": {
         "value": {
-          "timeInMs": 1964.33,
-          "timestamp": 176948648800
+          "timeInMs": 1656.496,
+          "timestamp": 180520886569
         }
       },
       "scoringMode": "numeric",
@@ -322,33 +358,33 @@
       "helpText": "First Interactive marks the time at which the page is minimally interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-interactive)."
     },
     "consistently-interactive": {
-      "score": 98,
-      "displayValue": "1,960 ms",
-      "rawValue": 1964.33,
+      "score": 99,
+      "displayValue": "1,660 ms",
+      "rawValue": 1656.496,
       "extendedInfo": {
         "value": {
           "cpuQuietPeriod": {
-            "start": 176948613.511,
-            "end": 176983644.298
+            "start": 180520857.23000002,
+            "end": 180526175.843
           },
           "networkQuietPeriod": {
-            "start": 176948059.339,
-            "end": 176983644.298
+            "start": 180520446.529,
+            "end": 180526175.843
           },
           "cpuQuietPeriods": [
             {
-              "start": 176948613.511,
-              "end": 176983644.298
+              "start": 180520857.23000002,
+              "end": 180526175.843
             }
           ],
           "networkQuietPeriods": [
             {
-              "start": 176948059.339,
-              "end": 176983644.298
+              "start": 180520446.529,
+              "end": 180526175.843
             }
           ],
-          "timestamp": 176948648800,
-          "timeInMs": 1964.33
+          "timestamp": 180520886569,
+          "timeInMs": 1656.496
         }
       },
       "scoringMode": "numeric",
@@ -398,42 +434,42 @@
       "extendedInfo": {
         "value": {
           "chains": {
-            "A4CF0C1FEC8F53A2273FD0BD12BDAD91": {
+            "6E0EDCD4FEB6C2D3781693F670F90F93": {
               "request": {
                 "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
-                "startTime": 176946.686048,
-                "endTime": 176947.426503,
-                "responseReceivedTime": 176947.415042,
+                "startTime": 180519.231687,
+                "endTime": 180519.833381,
+                "responseReceivedTime": 180519.825507,
                 "transferSize": 1183
               },
               "children": {
-                "32396.2": {
+                "37081.2": {
                   "request": {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                    "startTime": 176947.484008,
-                    "endTime": 176948.138283,
-                    "responseReceivedTime": 176948.050557,
+                    "startTime": 180519.871156,
+                    "endTime": 180520.525922,
+                    "responseReceivedTime": 180520.437364,
                     "transferSize": 8036
                   },
                   "children": {}
                 },
-                "32396.3": {
+                "37081.3": {
                   "request": {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-                    "startTime": 176947.485758,
-                    "endTime": 176948.059339,
-                    "responseReceivedTime": 176948.058483,
+                    "startTime": 180519.873007,
+                    "endTime": 180520.446529,
+                    "responseReceivedTime": 180520.445911,
                     "transferSize": 348
                   },
                   "children": {}
                 },
-                "32396.4": {
+                "37081.4": {
                   "request": {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                    "startTime": 176947.486917,
-                    "endTime": 176948.242585,
-                    "responseReceivedTime": 176948.066478,
-                    "transferSize": 26284
+                    "startTime": 180519.873777,
+                    "endTime": 180520.629053,
+                    "responseReceivedTime": 180520.453291,
+                    "transferSize": 26275
                   },
                   "children": {}
                 }
@@ -441,9 +477,9 @@
             }
           },
           "longestChain": {
-            "duration": 1556.5369999967515,
+            "duration": 1397.3660000192467,
             "length": 2,
-            "transferSize": 26284
+            "transferSize": 26275
           }
         }
       },
@@ -459,42 +495,42 @@
           "text": "View critical network waterfall:"
         },
         "chains": {
-          "A4CF0C1FEC8F53A2273FD0BD12BDAD91": {
+          "6E0EDCD4FEB6C2D3781693F670F90F93": {
             "request": {
               "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
-              "startTime": 176946.686048,
-              "endTime": 176947.426503,
-              "responseReceivedTime": 176947.415042,
+              "startTime": 180519.231687,
+              "endTime": 180519.833381,
+              "responseReceivedTime": 180519.825507,
               "transferSize": 1183
             },
             "children": {
-              "32396.2": {
+              "37081.2": {
                 "request": {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                  "startTime": 176947.484008,
-                  "endTime": 176948.138283,
-                  "responseReceivedTime": 176948.050557,
+                  "startTime": 180519.871156,
+                  "endTime": 180520.525922,
+                  "responseReceivedTime": 180520.437364,
                   "transferSize": 8036
                 },
                 "children": {}
               },
-              "32396.3": {
+              "37081.3": {
                 "request": {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-                  "startTime": 176947.485758,
-                  "endTime": 176948.059339,
-                  "responseReceivedTime": 176948.058483,
+                  "startTime": 180519.873007,
+                  "endTime": 180520.446529,
+                  "responseReceivedTime": 180520.445911,
                   "transferSize": 348
                 },
                 "children": {}
               },
-              "32396.4": {
+              "37081.4": {
                 "request": {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                  "startTime": 176947.486917,
-                  "endTime": 176948.242585,
-                  "responseReceivedTime": 176948.066478,
-                  "transferSize": 26284
+                  "startTime": 180519.873777,
+                  "endTime": 180520.629053,
+                  "responseReceivedTime": 180520.453291,
+                  "transferSize": 26275
                 },
                 "children": {}
               }
@@ -502,9 +538,9 @@
           }
         },
         "longestChain": {
-          "duration": 1556.5369999967515,
+          "duration": 1397.3660000192467,
           "length": 2,
-          "transferSize": 26284
+          "transferSize": 26275
         }
       }
     },
@@ -704,25 +740,22 @@
     },
     "mainthread-work-breakdown": {
       "score": true,
-      "displayValue": "420 ms",
-      "rawValue": 421.18800008296967,
+      "displayValue": "240 ms",
+      "rawValue": 241.09900000691414,
       "extendedInfo": {
         "value": {
-          "Layout": 230.01900002360344,
-          "Evaluate Script": 113.5089999139309,
-          "Minor GC": 16.891999989748,
-          "DOM GC": 11.54299995303154,
-          "Run Microtasks": 10.515000015497208,
-          "Major GC": 8.85099995136261,
-          "Parse HTML": 8.840000003576279,
-          "Compile Script": 6.959000080823898,
-          "Paint": 5.2249999940395355,
-          "Recalculate Style": 4.449999988079071,
-          "Update Layer Tree": 1.95700004696846,
-          "Composite Layers": 1.8190001249313354,
-          "Hit Test": 0.4339999854564667,
-          "Parse Stylesheet": 0.14800000190734863,
-          "Image Decode": 0.027000010013580322
+          "Layout": 143.76100000739098,
+          "Evaluate Script": 63.358000010252,
+          "Minor GC": 10.64699998497963,
+          "Parse HTML": 7.64300000667572,
+          "Compile Script": 5.010000020265579,
+          "Paint": 4.340999990701675,
+          "Run Microtasks": 3.145999997854233,
+          "Recalculate Style": 2.0139999985694885,
+          "Parse Stylesheet": 0.589000016450882,
+          "Update Layer Tree": 0.30699995160102844,
+          "Composite Layers": 0.2619999945163727,
+          "Image Decode": 0.021000027656555176
         }
       },
       "scoringMode": "binary",
@@ -762,7 +795,7 @@
             },
             {
               "type": "text",
-              "text": "230 ms"
+              "text": "144 ms"
             }
           ],
           [
@@ -776,7 +809,7 @@
             },
             {
               "type": "text",
-              "text": "4 ms"
+              "text": "2 ms"
             }
           ],
           [
@@ -790,7 +823,7 @@
             },
             {
               "type": "text",
-              "text": "114 ms"
+              "text": "63 ms"
             }
           ],
           [
@@ -804,7 +837,7 @@
             },
             {
               "type": "text",
-              "text": "11 ms"
+              "text": "3 ms"
             }
           ],
           [
@@ -818,35 +851,7 @@
             },
             {
               "type": "text",
-              "text": "17 ms"
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "text": "Garbage collection"
-            },
-            {
-              "type": "text",
-              "text": "DOM GC"
-            },
-            {
-              "type": "text",
-              "text": "12 ms"
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "text": "Garbage collection"
-            },
-            {
-              "type": "text",
-              "text": "Major GC"
-            },
-            {
-              "type": "text",
-              "text": "9 ms"
+              "text": "11 ms"
             }
           ],
           [
@@ -860,7 +865,7 @@
             },
             {
               "type": "text",
-              "text": "9 ms"
+              "text": "8 ms"
             }
           ],
           [
@@ -874,7 +879,7 @@
             },
             {
               "type": "text",
-              "text": "0 ms"
+              "text": "1 ms"
             }
           ],
           [
@@ -888,7 +893,7 @@
             },
             {
               "type": "text",
-              "text": "7 ms"
+              "text": "5 ms"
             }
           ],
           [
@@ -902,7 +907,7 @@
             },
             {
               "type": "text",
-              "text": "5 ms"
+              "text": "4 ms"
             }
           ],
           [
@@ -916,7 +921,7 @@
             },
             {
               "type": "text",
-              "text": "2 ms"
+              "text": "0 ms"
             }
           ],
           [
@@ -927,20 +932,6 @@
             {
               "type": "text",
               "text": "Composite Layers"
-            },
-            {
-              "type": "text",
-              "text": "2 ms"
-            }
-          ],
-          [
-            {
-              "type": "text",
-              "text": "Compositing"
-            },
-            {
-              "type": "text",
-              "text": "Hit Test"
             },
             {
               "type": "text",
@@ -966,23 +957,23 @@
     },
     "bootup-time": {
       "score": true,
-      "displayValue": "340 ms",
-      "rawValue": 344.1360000371933,
+      "displayValue": "210 ms",
+      "rawValue": 212.51600003242493,
       "extendedInfo": {
         "value": {
           "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js": {
-            "Style & Layout": 228.27500000596046,
-            "Script Parsing & Compile": 3.666000008583069,
-            "Script Evaluation": 1.3050000071525574
+            "Style & Layout": 142.69400000572205,
+            "Script Parsing & Compile": 1.7759999930858612,
+            "Script Evaluation": 1.1510000228881836
           },
           "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js": {
-            "Script Evaluation": 98.79200002551079,
-            "Script Parsing & Compile": 1.276999980211258
+            "Script Evaluation": 56.81499996781349,
+            "Script Parsing & Compile": 0.7650000154972076
           },
           "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/": {
-            "Parsing HTML & CSS": 8.840000003576279,
-            "Script Parsing & Compile": 1.0439999997615814,
-            "Script Evaluation": 0.9370000064373016
+            "Parsing HTML & CSS": 7.64300000667572,
+            "Script Parsing & Compile": 1.5909999907016754,
+            "Script Evaluation": 0.08100003004074097
           }
         }
       },
@@ -1018,7 +1009,7 @@
             },
             {
               "type": "text",
-              "text": "99 ms"
+              "text": "57 ms"
             },
             {
               "type": "text",
@@ -1093,7 +1084,7 @@
           {
             "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
             "startTime": 0,
-            "endTime": 740.4549999919254,
+            "endTime": 601.6940000117756,
             "transferSize": 1183,
             "statusCode": 200,
             "mimeType": "text/html",
@@ -1101,8 +1092,8 @@
           },
           {
             "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-            "startTime": 797.9599999962375,
-            "endTime": 1452.2350000042934,
+            "startTime": 639.4690000161063,
+            "endTime": 1294.2350000084843,
             "transferSize": 8036,
             "statusCode": 200,
             "mimeType": "application/javascript",
@@ -1110,8 +1101,8 @@
           },
           {
             "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-            "startTime": 799.7099999920465,
-            "endTime": 1373.290999996243,
+            "startTime": 641.3199999951757,
+            "endTime": 1214.8420000157785,
             "transferSize": 348,
             "statusCode": 200,
             "mimeType": "text/css",
@@ -1119,17 +1110,17 @@
           },
           {
             "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-            "startTime": 800.8689999987837,
-            "endTime": 1556.5369999967515,
-            "transferSize": 26284,
+            "startTime": 642.0900000084657,
+            "endTime": 1397.3660000192467,
+            "transferSize": 26275,
             "statusCode": 200,
             "mimeType": "application/javascript",
             "resourceType": "script"
           },
           {
             "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW",
-            "startTime": 1676.528000010876,
-            "endTime": 1677.4739999964368,
+            "startTime": 1469.5210000209045,
+            "endTime": 1469.5930000161752,
             "transferSize": 0,
             "statusCode": 200,
             "mimeType": "image/png",
@@ -1137,8 +1128,8 @@
           },
           {
             "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/favicon.ico",
-            "startTime": 1939.9499999999534,
-            "endTime": 2509.8649999999907,
+            "startTime": 1634.34300001245,
+            "endTime": 2200.298000010662,
             "transferSize": 1273,
             "statusCode": 200,
             "mimeType": "image/x-icon",
@@ -1203,7 +1194,7 @@
             },
             {
               "type": "ms",
-              "text": 740.4549999919254
+              "text": 601.6940000117756
             },
             {
               "type": "bytes",
@@ -1229,11 +1220,11 @@
             },
             {
               "type": "ms",
-              "text": 797.9599999962375
+              "text": 639.4690000161063
             },
             {
               "type": "ms",
-              "text": 1452.2350000042934
+              "text": 1294.2350000084843
             },
             {
               "type": "bytes",
@@ -1259,11 +1250,11 @@
             },
             {
               "type": "ms",
-              "text": 799.7099999920465
+              "text": 641.3199999951757
             },
             {
               "type": "ms",
-              "text": 1373.290999996243
+              "text": 1214.8420000157785
             },
             {
               "type": "bytes",
@@ -1289,15 +1280,15 @@
             },
             {
               "type": "ms",
-              "text": 800.8689999987837
+              "text": 642.0900000084657
             },
             {
               "type": "ms",
-              "text": 1556.5369999967515
+              "text": 1397.3660000192467
             },
             {
               "type": "bytes",
-              "text": 26284
+              "text": 26275
             },
             {
               "type": "text",
@@ -1319,11 +1310,11 @@
             },
             {
               "type": "ms",
-              "text": 1676.528000010876
+              "text": 1469.5210000209045
             },
             {
               "type": "ms",
-              "text": 1677.4739999964368
+              "text": 1469.5930000161752
             },
             {
               "type": "bytes",
@@ -1349,11 +1340,11 @@
             },
             {
               "type": "ms",
-              "text": 1939.9499999999534
+              "text": 1634.34300001245
             },
             {
               "type": "ms",
-              "text": 2509.8649999999907
+              "text": 2200.298000010662
             },
             {
               "type": "bytes",
@@ -2250,7 +2241,7 @@
     "uses-long-cache-ttl": {
       "score": 99,
       "displayValue": "3 assets found",
-      "rawValue": 27734.4,
+      "rawValue": 27727.2,
       "extendedInfo": {
         "value": {
           "results": [
@@ -2263,8 +2254,8 @@
               "cacheLifetimeDisplay": "1 h",
               "cacheHitProbability": 0.2,
               "totalKb": "26 KB",
-              "totalBytes": 26284,
-              "wastedBytes": 21027.2
+              "totalBytes": 26275,
+              "wastedBytes": 21020
             },
             {
               "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
@@ -2367,13 +2358,13 @@
     "total-byte-weight": {
       "score": 100,
       "displayValue": "Total size was 36 KB",
-      "rawValue": 37124,
+      "rawValue": 37115,
       "extendedInfo": {
         "value": {
           "results": [
             {
               "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-              "totalBytes": 26284,
+              "totalBytes": 26275,
               "totalKb": "26 KB",
               "totalMs": "140 ms"
             },
@@ -3714,24 +3705,24 @@
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 92,
-            "displayValue": "1,960 ms",
-            "rawValue": 1964.3,
+            "score": 96,
+            "displayValue": "1,660 ms",
+            "rawValue": 1656.5,
             "extendedInfo": {
               "value": {
                 "timestamps": {
-                  "navStart": 176946684470,
-                  "fCP": 176948648798,
-                  "fMP": 176948648800,
-                  "onLoad": 176948614205,
-                  "endOfTrace": 176983644298
+                  "navStart": 180519230073,
+                  "fCP": 180520886568,
+                  "fMP": 180520886569,
+                  "onLoad": 180520858104,
+                  "endOfTrace": 180526175843
                 },
                 "timings": {
                   "navStart": 0,
-                  "fCP": 1964.328,
-                  "fMP": 1964.33,
-                  "onLoad": 1929.735,
-                  "endOfTrace": 36959.828
+                  "fCP": 1656.495,
+                  "fMP": 1656.496,
+                  "onLoad": 1628.031,
+                  "endOfTrace": 6945.77
                 },
                 "fmpFellBack": false
               }
@@ -3741,20 +3732,20 @@
             "description": "First meaningful paint",
             "helpText": "First meaningful paint measures when the primary content of a page is visible. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint)."
           },
-          "score": 92
+          "score": 96
         },
         {
           "id": "first-interactive",
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 98,
-            "displayValue": "1,960 ms",
-            "rawValue": 1964.33,
+            "score": 99,
+            "displayValue": "1,660 ms",
+            "rawValue": 1656.496,
             "extendedInfo": {
               "value": {
-                "timeInMs": 1964.33,
-                "timestamp": 176948648800
+                "timeInMs": 1656.496,
+                "timestamp": 180520886569
               }
             },
             "scoringMode": "numeric",
@@ -3762,40 +3753,40 @@
             "description": "First Interactive (beta)",
             "helpText": "First Interactive marks the time at which the page is minimally interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-interactive)."
           },
-          "score": 98
+          "score": 99
         },
         {
           "id": "consistently-interactive",
           "weight": 5,
           "group": "perf-metric",
           "result": {
-            "score": 98,
-            "displayValue": "1,960 ms",
-            "rawValue": 1964.33,
+            "score": 99,
+            "displayValue": "1,660 ms",
+            "rawValue": 1656.496,
             "extendedInfo": {
               "value": {
                 "cpuQuietPeriod": {
-                  "start": 176948613.511,
-                  "end": 176983644.298
+                  "start": 180520857.23000002,
+                  "end": 180526175.843
                 },
                 "networkQuietPeriod": {
-                  "start": 176948059.339,
-                  "end": 176983644.298
+                  "start": 180520446.529,
+                  "end": 180526175.843
                 },
                 "cpuQuietPeriods": [
                   {
-                    "start": 176948613.511,
-                    "end": 176983644.298
+                    "start": 180520857.23000002,
+                    "end": 180526175.843
                   }
                 ],
                 "networkQuietPeriods": [
                   {
-                    "start": 176948059.339,
-                    "end": 176983644.298
+                    "start": 180520446.529,
+                    "end": 180526175.843
                   }
                 ],
-                "timestamp": 176948648800,
-                "timeInMs": 1964.33
+                "timestamp": 180520886569,
+                "timeInMs": 1656.496
               }
             },
             "scoringMode": "numeric",
@@ -3803,45 +3794,81 @@
             "description": "Consistently Interactive (beta)",
             "helpText": "Consistently Interactive marks the time at which the page is fully interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/consistently-interactive)."
           },
-          "score": 98
+          "score": 99
         },
         {
           "id": "speed-index-metric",
           "weight": 1,
           "group": "perf-metric",
           "result": {
-            "score": 93,
-            "displayValue": "1,965",
-            "rawValue": 1965,
+            "score": 96,
+            "displayValue": "1,674",
+            "rawValue": 1674,
             "extendedInfo": {
               "value": {
                 "timings": {
-                  "firstVisualChange": 1964,
-                  "visuallyReady": 1964.5230000019073,
-                  "visuallyComplete": 1976,
-                  "perceptualSpeedIndex": 1964.6226976107716
+                  "firstVisualChange": 1656,
+                  "visuallyReady": 1721.1579999923706,
+                  "visuallyComplete": 1821,
+                  "perceptualSpeedIndex": 1674.2305171131459
                 },
                 "timestamps": {
-                  "firstVisualChange": 176948648470,
-                  "visuallyReady": 176948648993,
-                  "visuallyComplete": 176948660470,
-                  "perceptualSpeedIndex": 176948649092.69763
+                  "firstVisualChange": 180520886073,
+                  "visuallyReady": 180520951231,
+                  "visuallyComplete": 180521051073,
+                  "perceptualSpeedIndex": 180520904303.51712
                 },
                 "frames": [
                   {
-                    "timestamp": 176946684.47,
+                    "timestamp": 180519230.073,
                     "progress": 0
                   },
                   {
-                    "timestamp": 176948076.363,
+                    "timestamp": 180520456.134,
                     "progress": 0
                   },
                   {
-                    "timestamp": 176948648.993,
-                    "progress": 99.17625705208518
+                    "timestamp": 180520886.758,
+                    "progress": 82.48800022042307
                   },
                   {
-                    "timestamp": 176948661.096,
+                    "timestamp": 180520901.506,
+                    "progress": 83.23370241005684
+                  },
+                  {
+                    "timestamp": 180520917.94,
+                    "progress": 83.23370241005684
+                  },
+                  {
+                    "timestamp": 180520935.047,
+                    "progress": 83.23370241005684
+                  },
+                  {
+                    "timestamp": 180520951.231,
+                    "progress": 87.63378296330998
+                  },
+                  {
+                    "timestamp": 180520967.798,
+                    "progress": 90.04115638272553
+                  },
+                  {
+                    "timestamp": 180520984.761,
+                    "progress": 92.77938303799651
+                  },
+                  {
+                    "timestamp": 180521001.315,
+                    "progress": 95.09394997153449
+                  },
+                  {
+                    "timestamp": 180521018.063,
+                    "progress": 97.4325266860433
+                  },
+                  {
+                    "timestamp": 180521034.637,
+                    "progress": 97.4325266860433
+                  },
+                  {
+                    "timestamp": 180521051.98,
                     "progress": 100
                   }
                 ]
@@ -3852,7 +3879,7 @@
             "description": "Perceptual Speed Index",
             "helpText": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/speed-index)."
           },
-          "score": 93
+          "score": 96
         },
         {
           "id": "estimated-input-latency",
@@ -3882,7 +3909,7 @@
                 },
                 {
                   "percentile": 1,
-                  "time": 23.455999999991036
+                  "time": 19.941999999999098
                 }
               ]
             },
@@ -4366,13 +4393,13 @@
           "weight": 0,
           "group": "perf-hint",
           "result": {
-            "score": false,
-            "displayValue": "660 ms",
-            "rawValue": 655.3439999988774,
-            "debugString": "Root document took 655 ms to get the first byte.",
+            "score": true,
+            "displayValue": "560 ms",
+            "rawValue": 563.0299999902495,
+            "debugString": "",
             "extendedInfo": {
               "value": {
-                "wastedMs": 55.34399999887739
+                "wastedMs": -36.97000000975049
               }
             },
             "scoringMode": "binary",
@@ -4381,7 +4408,7 @@
             "description": "Keep server response times low (TTFB)",
             "helpText": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://developers.google.com/web/tools/chrome-devtools/network-performance/issues)."
           },
-          "score": 0
+          "score": 100
         },
         {
           "id": "redirects",
@@ -4463,13 +4490,13 @@
           "result": {
             "score": 100,
             "displayValue": "Total size was 36 KB",
-            "rawValue": 37124,
+            "rawValue": 37115,
             "extendedInfo": {
               "value": {
                 "results": [
                   {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                    "totalBytes": 26284,
+                    "totalBytes": 26275,
                     "totalKb": "26 KB",
                     "totalMs": "140 ms"
                   },
@@ -4608,7 +4635,7 @@
           "result": {
             "score": 99,
             "displayValue": "3 assets found",
-            "rawValue": 27734.4,
+            "rawValue": 27727.2,
             "extendedInfo": {
               "value": {
                 "results": [
@@ -4621,8 +4648,8 @@
                     "cacheLifetimeDisplay": "1 h",
                     "cacheHitProbability": 0.2,
                     "totalKb": "26 KB",
-                    "totalBytes": 26284,
-                    "wastedBytes": 21027.2
+                    "totalBytes": 26275,
+                    "wastedBytes": 21020
                   },
                   {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
@@ -4797,42 +4824,42 @@
             "extendedInfo": {
               "value": {
                 "chains": {
-                  "A4CF0C1FEC8F53A2273FD0BD12BDAD91": {
+                  "6E0EDCD4FEB6C2D3781693F670F90F93": {
                     "request": {
                       "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
-                      "startTime": 176946.686048,
-                      "endTime": 176947.426503,
-                      "responseReceivedTime": 176947.415042,
+                      "startTime": 180519.231687,
+                      "endTime": 180519.833381,
+                      "responseReceivedTime": 180519.825507,
                       "transferSize": 1183
                     },
                     "children": {
-                      "32396.2": {
+                      "37081.2": {
                         "request": {
                           "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                          "startTime": 176947.484008,
-                          "endTime": 176948.138283,
-                          "responseReceivedTime": 176948.050557,
+                          "startTime": 180519.871156,
+                          "endTime": 180520.525922,
+                          "responseReceivedTime": 180520.437364,
                           "transferSize": 8036
                         },
                         "children": {}
                       },
-                      "32396.3": {
+                      "37081.3": {
                         "request": {
                           "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-                          "startTime": 176947.485758,
-                          "endTime": 176948.059339,
-                          "responseReceivedTime": 176948.058483,
+                          "startTime": 180519.873007,
+                          "endTime": 180520.446529,
+                          "responseReceivedTime": 180520.445911,
                           "transferSize": 348
                         },
                         "children": {}
                       },
-                      "32396.4": {
+                      "37081.4": {
                         "request": {
                           "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                          "startTime": 176947.486917,
-                          "endTime": 176948.242585,
-                          "responseReceivedTime": 176948.066478,
-                          "transferSize": 26284
+                          "startTime": 180519.873777,
+                          "endTime": 180520.629053,
+                          "responseReceivedTime": 180520.453291,
+                          "transferSize": 26275
                         },
                         "children": {}
                       }
@@ -4840,9 +4867,9 @@
                   }
                 },
                 "longestChain": {
-                  "duration": 1556.5369999967515,
+                  "duration": 1397.3660000192467,
                   "length": 2,
-                  "transferSize": 26284
+                  "transferSize": 26275
                 }
               }
             },
@@ -4858,42 +4885,42 @@
                 "text": "View critical network waterfall:"
               },
               "chains": {
-                "A4CF0C1FEC8F53A2273FD0BD12BDAD91": {
+                "6E0EDCD4FEB6C2D3781693F670F90F93": {
                   "request": {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
-                    "startTime": 176946.686048,
-                    "endTime": 176947.426503,
-                    "responseReceivedTime": 176947.415042,
+                    "startTime": 180519.231687,
+                    "endTime": 180519.833381,
+                    "responseReceivedTime": 180519.825507,
                     "transferSize": 1183
                   },
                   "children": {
-                    "32396.2": {
+                    "37081.2": {
                       "request": {
                         "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                        "startTime": 176947.484008,
-                        "endTime": 176948.138283,
-                        "responseReceivedTime": 176948.050557,
+                        "startTime": 180519.871156,
+                        "endTime": 180520.525922,
+                        "responseReceivedTime": 180520.437364,
                         "transferSize": 8036
                       },
                       "children": {}
                     },
-                    "32396.3": {
+                    "37081.3": {
                       "request": {
                         "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-                        "startTime": 176947.485758,
-                        "endTime": 176948.059339,
-                        "responseReceivedTime": 176948.058483,
+                        "startTime": 180519.873007,
+                        "endTime": 180520.446529,
+                        "responseReceivedTime": 180520.445911,
                         "transferSize": 348
                       },
                       "children": {}
                     },
-                    "32396.4": {
+                    "37081.4": {
                       "request": {
                         "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                        "startTime": 176947.486917,
-                        "endTime": 176948.242585,
-                        "responseReceivedTime": 176948.066478,
-                        "transferSize": 26284
+                        "startTime": 180519.873777,
+                        "endTime": 180520.629053,
+                        "responseReceivedTime": 180520.453291,
+                        "transferSize": 26275
                       },
                       "children": {}
                     }
@@ -4901,9 +4928,9 @@
                 }
               },
               "longestChain": {
-                "duration": 1556.5369999967515,
+                "duration": 1397.3660000192467,
                 "length": 2,
-                "transferSize": 26284
+                "transferSize": 26275
               }
             }
           },
@@ -4921,7 +4948,7 @@
                 {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
                   "startTime": 0,
-                  "endTime": 740.4549999919254,
+                  "endTime": 601.6940000117756,
                   "transferSize": 1183,
                   "statusCode": 200,
                   "mimeType": "text/html",
@@ -4929,8 +4956,8 @@
                 },
                 {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                  "startTime": 797.9599999962375,
-                  "endTime": 1452.2350000042934,
+                  "startTime": 639.4690000161063,
+                  "endTime": 1294.2350000084843,
                   "transferSize": 8036,
                   "statusCode": 200,
                   "mimeType": "application/javascript",
@@ -4938,8 +4965,8 @@
                 },
                 {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/css/app.668e75df.css",
-                  "startTime": 799.7099999920465,
-                  "endTime": 1373.290999996243,
+                  "startTime": 641.3199999951757,
+                  "endTime": 1214.8420000157785,
                   "transferSize": 348,
                   "statusCode": 200,
                   "mimeType": "text/css",
@@ -4947,17 +4974,17 @@
                 },
                 {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js",
-                  "startTime": 800.8689999987837,
-                  "endTime": 1556.5369999967515,
-                  "transferSize": 26284,
+                  "startTime": 642.0900000084657,
+                  "endTime": 1397.3660000192467,
+                  "transferSize": 26275,
                   "statusCode": 200,
                   "mimeType": "application/javascript",
                   "resourceType": "script"
                 },
                 {
                   "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW",
-                  "startTime": 1676.528000010876,
-                  "endTime": 1677.4739999964368,
+                  "startTime": 1469.5210000209045,
+                  "endTime": 1469.5930000161752,
                   "transferSize": 0,
                   "statusCode": 200,
                   "mimeType": "image/png",
@@ -4965,8 +4992,8 @@
                 },
                 {
                   "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/favicon.ico",
-                  "startTime": 1939.9499999999534,
-                  "endTime": 2509.8649999999907,
+                  "startTime": 1634.34300001245,
+                  "endTime": 2200.298000010662,
                   "transferSize": 1273,
                   "statusCode": 200,
                   "mimeType": "image/x-icon",
@@ -5031,7 +5058,7 @@
                   },
                   {
                     "type": "ms",
-                    "text": 740.4549999919254
+                    "text": 601.6940000117756
                   },
                   {
                     "type": "bytes",
@@ -5057,11 +5084,11 @@
                   },
                   {
                     "type": "ms",
-                    "text": 797.9599999962375
+                    "text": 639.4690000161063
                   },
                   {
                     "type": "ms",
-                    "text": 1452.2350000042934
+                    "text": 1294.2350000084843
                   },
                   {
                     "type": "bytes",
@@ -5087,11 +5114,11 @@
                   },
                   {
                     "type": "ms",
-                    "text": 799.7099999920465
+                    "text": 641.3199999951757
                   },
                   {
                     "type": "ms",
-                    "text": 1373.290999996243
+                    "text": 1214.8420000157785
                   },
                   {
                     "type": "bytes",
@@ -5117,15 +5144,15 @@
                   },
                   {
                     "type": "ms",
-                    "text": 800.8689999987837
+                    "text": 642.0900000084657
                   },
                   {
                     "type": "ms",
-                    "text": 1556.5369999967515
+                    "text": 1397.3660000192467
                   },
                   {
                     "type": "bytes",
-                    "text": 26284
+                    "text": 26275
                   },
                   {
                     "type": "text",
@@ -5147,11 +5174,11 @@
                   },
                   {
                     "type": "ms",
-                    "text": 1676.528000010876
+                    "text": 1469.5210000209045
                   },
                   {
                     "type": "ms",
-                    "text": 1677.4739999964368
+                    "text": 1469.5930000161752
                   },
                   {
                     "type": "bytes",
@@ -5177,11 +5204,11 @@
                   },
                   {
                     "type": "ms",
-                    "text": 1939.9499999999534
+                    "text": 1634.34300001245
                   },
                   {
                     "type": "ms",
-                    "text": 2509.8649999999907
+                    "text": 2200.298000010662
                   },
                   {
                     "type": "bytes",
@@ -5252,23 +5279,23 @@
           "group": "perf-info",
           "result": {
             "score": true,
-            "displayValue": "340 ms",
-            "rawValue": 344.1360000371933,
+            "displayValue": "210 ms",
+            "rawValue": 212.51600003242493,
             "extendedInfo": {
               "value": {
                 "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/vendor.3403eff1.js": {
-                  "Style & Layout": 228.27500000596046,
-                  "Script Parsing & Compile": 3.666000008583069,
-                  "Script Evaluation": 1.3050000071525574
+                  "Style & Layout": 142.69400000572205,
+                  "Script Parsing & Compile": 1.7759999930858612,
+                  "Script Evaluation": 1.1510000228881836
                 },
                 "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js": {
-                  "Script Evaluation": 98.79200002551079,
-                  "Script Parsing & Compile": 1.276999980211258
+                  "Script Evaluation": 56.81499996781349,
+                  "Script Parsing & Compile": 0.7650000154972076
                 },
                 "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/": {
-                  "Parsing HTML & CSS": 8.840000003576279,
-                  "Script Parsing & Compile": 1.0439999997615814,
-                  "Script Evaluation": 0.9370000064373016
+                  "Parsing HTML & CSS": 7.64300000667572,
+                  "Script Parsing & Compile": 1.5909999907016754,
+                  "Script Evaluation": 0.08100003004074097
                 }
               }
             },
@@ -5304,7 +5331,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "99 ms"
+                    "text": "57 ms"
                   },
                   {
                     "type": "text",
@@ -5330,56 +5357,56 @@
             "helpText": "This is what the load of your site looked like.",
             "details": {
               "type": "filmstrip",
-              "scale": 1976,
+              "scale": 1821,
               "items": [
                 {
-                  "timing": 198,
-                  "timestamp": 176946882070,
+                  "timing": 182,
+                  "timestamp": 180519412173,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 395,
-                  "timestamp": 176947079670,
+                  "timing": 364,
+                  "timestamp": 180519594273,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 593,
-                  "timestamp": 176947277270,
+                  "timing": 546,
+                  "timestamp": 180519776373.00003,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 790,
-                  "timestamp": 176947474870,
+                  "timing": 728,
+                  "timestamp": 180519958473.00003,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 988,
-                  "timestamp": 176947672470,
+                  "timing": 911,
+                  "timestamp": 180520140573,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 1186,
-                  "timestamp": 176947870070,
+                  "timing": 1093,
+                  "timestamp": 180520322673,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 1383,
-                  "timestamp": 176948067670,
+                  "timing": 1275,
+                  "timestamp": 180520504773,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 1581,
-                  "timestamp": 176948265270,
+                  "timing": 1457,
+                  "timestamp": 180520686873.00003,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 1778,
-                  "timestamp": 176948462870,
+                  "timing": 1639,
+                  "timestamp": 180520868973.00003,
                   "data": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIANUAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
                 },
                 {
-                  "timing": 1976,
-                  "timestamp": 176948660470,
+                  "timing": 1821,
+                  "timestamp": 180521051073,
                   "data": "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"
                 }
               ]
@@ -5393,25 +5420,22 @@
           "group": "perf-info",
           "result": {
             "score": true,
-            "displayValue": "420 ms",
-            "rawValue": 421.18800008296967,
+            "displayValue": "240 ms",
+            "rawValue": 241.09900000691414,
             "extendedInfo": {
               "value": {
-                "Layout": 230.01900002360344,
-                "Evaluate Script": 113.5089999139309,
-                "Minor GC": 16.891999989748,
-                "DOM GC": 11.54299995303154,
-                "Run Microtasks": 10.515000015497208,
-                "Major GC": 8.85099995136261,
-                "Parse HTML": 8.840000003576279,
-                "Compile Script": 6.959000080823898,
-                "Paint": 5.2249999940395355,
-                "Recalculate Style": 4.449999988079071,
-                "Update Layer Tree": 1.95700004696846,
-                "Composite Layers": 1.8190001249313354,
-                "Hit Test": 0.4339999854564667,
-                "Parse Stylesheet": 0.14800000190734863,
-                "Image Decode": 0.027000010013580322
+                "Layout": 143.76100000739098,
+                "Evaluate Script": 63.358000010252,
+                "Minor GC": 10.64699998497963,
+                "Parse HTML": 7.64300000667572,
+                "Compile Script": 5.010000020265579,
+                "Paint": 4.340999990701675,
+                "Run Microtasks": 3.145999997854233,
+                "Recalculate Style": 2.0139999985694885,
+                "Parse Stylesheet": 0.589000016450882,
+                "Update Layer Tree": 0.30699995160102844,
+                "Composite Layers": 0.2619999945163727,
+                "Image Decode": 0.021000027656555176
               }
             },
             "scoringMode": "binary",
@@ -5451,7 +5475,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "230 ms"
+                    "text": "144 ms"
                   }
                 ],
                 [
@@ -5465,7 +5489,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "4 ms"
+                    "text": "2 ms"
                   }
                 ],
                 [
@@ -5479,7 +5503,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "114 ms"
+                    "text": "63 ms"
                   }
                 ],
                 [
@@ -5493,7 +5517,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "11 ms"
+                    "text": "3 ms"
                   }
                 ],
                 [
@@ -5507,35 +5531,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "17 ms"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Garbage collection"
-                  },
-                  {
-                    "type": "text",
-                    "text": "DOM GC"
-                  },
-                  {
-                    "type": "text",
-                    "text": "12 ms"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Garbage collection"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Major GC"
-                  },
-                  {
-                    "type": "text",
-                    "text": "9 ms"
+                    "text": "11 ms"
                   }
                 ],
                 [
@@ -5549,7 +5545,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "9 ms"
+                    "text": "8 ms"
                   }
                 ],
                 [
@@ -5563,7 +5559,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "0 ms"
+                    "text": "1 ms"
                   }
                 ],
                 [
@@ -5577,7 +5573,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "7 ms"
+                    "text": "5 ms"
                   }
                 ],
                 [
@@ -5591,7 +5587,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "5 ms"
+                    "text": "4 ms"
                   }
                 ],
                 [
@@ -5605,7 +5601,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "2 ms"
+                    "text": "0 ms"
                   }
                 ],
                 [
@@ -5616,20 +5612,6 @@
                   {
                     "type": "text",
                     "text": "Composite Layers"
-                  },
-                  {
-                    "type": "text",
-                    "text": "2 ms"
-                  }
-                ],
-                [
-                  {
-                    "type": "text",
-                    "text": "Compositing"
-                  },
-                  {
-                    "type": "text",
-                    "text": "Hit Test"
                   },
                   {
                     "type": "text",
@@ -5689,7 +5671,7 @@
         }
       ],
       "id": "performance",
-      "score": 96.05882352941177
+      "score": 98
     },
     {
       "name": "Progressive Web App",
@@ -5790,11 +5772,11 @@
                 "firstRequestLatencies": [
                   {
                     "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/js/app.67977696.js",
-                    "latency": "565.9"
+                    "latency": "565.58"
                   }
                 ],
                 "isFast": true,
-                "timeToFirstInteractive": 1964.33
+                "timeToFirstInteractive": 1656.496
               }
             },
             "scoringMode": "binary",
@@ -8202,6 +8184,6 @@
     }
   },
   "timing": {
-    "total": 42259
+    "total": 11420
   }
 }
