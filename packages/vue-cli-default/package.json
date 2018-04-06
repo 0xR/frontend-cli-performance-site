@@ -8,10 +8,12 @@
     "serve": "vue-cli-service serve --open",
     "gcp-build": "npm run build",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lighthouse": "lighthouse https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
   },
   "dependencies": {
     "http-server": "0.11.1",
+    "lighthouse": "2.9.4",
     "vue": "^2.5.13"
   },
   "devDependencies": {
