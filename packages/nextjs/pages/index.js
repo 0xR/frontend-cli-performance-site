@@ -16,32 +16,38 @@ const MeasurementRow = ({ metric }) => (
 
 export default () => (
   <div>
-    <header className="main-header">
-      <h1>CLI performance metrics</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem.
-      </p>
-    </header>
-    <table className="measurement-table">
-      <thead>
-        <tr>
-          <td />
-          {Object.keys(report).map(key => (
-            <td><a href={`https://${key}-dot-ruben-oostinga-speeltuin.appspot.com`}>
-              {report[key].name}
-            </a></td>
+    <main>
+      <header className="main-header">
+        <h1>CLI performance metrics</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </header>
+      <table className="measurement-table">
+        <thead>
+          <tr>
+            <td />
+            {Object.keys(report).map(key => (
+              <td>
+                <a
+                  href={`https://${key}-dot-ruben-oostinga-speeltuin.appspot.com`}
+                >
+                  {report[key].name}
+                </a>
+              </td>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {report[Object.keys(report)[0]].metrics.map(({ description }) => (
+            <MeasurementRow metric={description} />
           ))}
-        </tr>
-      </thead>
-      <tbody>
-        {report[Object.keys(report)[0]].metrics.map(({ description }) => (
-          <MeasurementRow metric={description} />
-        ))}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </main>
     <footer className="main-footer">
       Made with ❤️ @ <a href="https://xebia.com/">Xebia</a>
     </footer>
