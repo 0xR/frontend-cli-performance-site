@@ -12,6 +12,7 @@
     "dev": "react-scripts start",
     "start": "http-server build",
     "build": "react-scripts build",
+    "gcp-build": "npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

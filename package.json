@@ -1,4 +1,28 @@
 {
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "name": "frontend-cli-performance-site",
+  "description": "We are measuring the performance (time until first render) for apps created with several CLIs:",
+  "version": "1.0.0",
+  "main": "tools/lighthouse.js",
+  "dependencies": {
+    "lighthouse": "2.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lighthouse": "lighthouse https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xR/frontend-cli-performance-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xR/frontend-cli-performance-site/issues"
+  },
+  "homepage": "https://github.com/0xR/frontend-cli-performance-site#readme"
 }
