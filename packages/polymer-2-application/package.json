@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "start": "npm run build",
-    "dev": "polymer serve build/default",
+    "start": "polymer serve build/default -P h2",
+    "dev": "polymer serve",
     "install": "polymer install",
     "postinstall": "bower install --allow-root",
     "gcp-build": "echo gcp build && npm run build",
