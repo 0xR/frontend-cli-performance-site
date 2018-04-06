@@ -1,5 +1,38 @@
-[
-  {
-    "First meaningful paint": "2,700 ms"
-  }
-]
+{
+  "angular-cli": [
+    {
+      "description": "First meaningful paint",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "First Interactive",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "Consistently interactive",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "Speed index metric",
+      "displayValue": "1,234ms"
+    }
+  ],
+  "vue-cli-default": [
+    {
+      "description": "First meaningful paint",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "First Interactive",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "Consistently interactive",
+      "displayValue": "1,234ms"
+    },
+    {
+      "description": "Speed index metric",
+      "displayValue": "1,234ms"
+    }
+  ]
+}
