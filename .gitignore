@@ -1,6 +1,2 @@
 package-lock.json
 yarn.lock
-yarn-error.log
-.idea/*
-packages/polymer-2-application/bower_components
-

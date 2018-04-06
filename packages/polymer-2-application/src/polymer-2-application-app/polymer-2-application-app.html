@@ -1,13 +1,61 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
-
+<link rel="import" href="../styles.html">
 <dom-module id="polymer-2-application-app">
   <template>
+    <style include="styles"></style>
     <style>
       :host {
-        display: block;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+
+    <main>
+      <header class="main-header">
+        <h1>CLI performance metrics</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </header>
+
+      <table class="measurement-table">
+        <thead>
+        <tr>
+          <td></td>
+          <td><a href="/">Angular</a></td>
+          <td><a href="/">React</a></td>
+          <td><a href="/">Vue</a></td>
+          <td><a href="/">Nuxt</a></td>
+          <td><a href="/">Polymer</a></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>What we measure</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>What we measure</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+          <td>12345</td>
+        </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer class="main-footer">
+      Made @ <a href="https://xebia.com/">Xebia</a>
+    </footer>
   </template>
 
   <script>
@@ -19,9 +67,9 @@
       static get is() { return 'polymer-2-application-app'; }
       static get properties() {
         return {
-          prop1: {
-            type: String,
-            value: 'polymer-2-application-app'
+          metrics: {
+            type: Object,
+            value: {}
           }
         };
       }
