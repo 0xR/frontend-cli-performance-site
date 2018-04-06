@@ -1,2 +1,5 @@
 package-lock.json
 yarn.lock
+.idea/*
+packages/polymer-2-application/bower_components
+
