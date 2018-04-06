@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-function getReportPerProject(name) {
-  const data = require(`../packages/${name}/report.json`);
+function getReportPerProject(path, name) {
+  const data = require(`../packages/${path}/report.json`);
   const getMetric = function (name){
     return {
       description: data.audits[name].description,
@@ -9,24 +9,22 @@ function getReportPerProject(name) {
     }
   };
 
-  const report = {};
   const result = [];
   const metrics = ['first-meaningful-paint', 'speed-index-metric', 'first-interactive', 'consistently-interactive'];
   metrics.forEach((metric) => {
     result.push(getMetric(metric));
   });
 
-  report[name] = {
+  return {
     name: name,
     metrics: result
   };
-  return report;
 }
 
 function generateTotalReport() {
-  const results = [];
+  const results = {};
   projects.forEach(project => {
-    results.push(getReportPerProject(project.name));
+    results[project.path] = getReportPerProject(project.path, project.name);
   });
 
   return results;
@@ -35,15 +33,18 @@ function generateTotalReport() {
 // generate report per project
 const projects = [
   {
-    name: 'angular-cli',
+    name: 'Angular CLI',
+    path: 'angular-cli',
     output: 'angular-cli/src/assets'
   },
   {
-    name: 'polymer-2-application',
+    name: 'Polymer CLI',
+    path: 'polymer-2-application',
     output: 'polymer-2-application/src'
   },
   {
-    name: 'vue-cli-default',
+    name: 'VueJS CLI',
+    path: 'vue-cli-default',
     output: 'vue-cli-default/public'
   },
 ];
