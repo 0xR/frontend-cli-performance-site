@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build",
+    "start": "npx http-server dist",
     "dev": "ng serve",
+    "gcp-build": "npm run build",
     "build": "ng build --prod",
     "gcp-build": "npm run build",
     "test": "ng test",

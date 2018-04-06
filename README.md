@@ -18,4 +18,4 @@ Run `npm run dev` from one of the packages to run a website.
 
 ## Production (WIP)
 
-Run `npm start` from one of the packages. This runs or builds in production mode.
+Run `npm start` from one of the packages. This runs in production mode. We expect the bundle already be built.
