@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "http-server": "0.11.1",
+    "lighthouse": "2.9.4",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"
@@ -14,6 +15,7 @@
     "build": "react-scripts build",
     "gcp-build": "npm run build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lighthouse": "lighthouse https://create-react-app-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
   }
 }
