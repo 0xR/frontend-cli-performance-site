@@ -47,6 +47,11 @@ const projects = [
     path: 'vue-cli-default',
     output: 'vue-cli-default/public'
   },
+  {
+    name: 'create-react-app',
+    path: 'create-react-app',
+    output: 'create-react-app/public'
+  },
 ];
 
 const totalReport = generateTotalReport();
