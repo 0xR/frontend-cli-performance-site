@@ -1,4 +1,4 @@
-import report from '../../../tools/report.json';
+import report from '../report.json';
 
 const MeasurementRow = ({ metric }) => (
   <tr>
