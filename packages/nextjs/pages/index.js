@@ -1,3 +1,19 @@
+import report from '../../../tools/report.json';
+
+const MeasurementRow = ({ metric }) => (
+  <tr>
+    <td>{metric}</td>
+    {Object.keys(report).map(key => (
+      <td>
+        {
+          report[key].metrics.find(({ description }) => description === metric)
+            .displayValue
+        }
+      </td>
+    ))}
+  </tr>
+);
+
 export default () => (
   <div>
     <header className="main-header">
@@ -13,58 +29,17 @@ export default () => (
       <thead>
         <tr>
           <td />
-          <td>
-            <a href="https://angular-cli-dot-ruben-oostinga-speeltuin.appspot.com/">
-              Angular
-            </a>
-          </td>
-          <td>
-            <a href="https://create-react-app-dot-ruben-oostinga-speeltuin.appspot.com/">
-              React
-            </a>
-          </td>
-          <td>
-            <a href="https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/">
-              VueJS
-            </a>
-          </td>
-          <td>
-            <a href="https://polymer-2-application-dot-ruben-oostinga-speeltuin.appspot.com/">
-              Polymer
-            </a>
-          </td>
-          <td>
-            <a href="https://nextjs-dot-ruben-oostinga-speeltuin.appspot.com/">
-              NextJS
-            </a>
-          </td>
+          {Object.keys(report).map(key => (
+            <td><a href={`https://${key}-dot-ruben-oostinga-speeltuin.appspot.com`}>
+              {report[key].name}
+            </a></td>
+          ))}
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Lighthouse Performance</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>First Meaningful Paint</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>First Interactive</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
+        {report[Object.keys(report)[0]].metrics.map(({ description }) => (
+          <MeasurementRow metric={description} />
+        ))}
       </tbody>
     </table>
     <footer className="main-footer">
