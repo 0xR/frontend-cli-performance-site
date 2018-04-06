@@ -12,13 +12,15 @@
     "install": "polymer install",
     "postinstall": "bower install --allow-root",
     "gcp-build": "npm run build",
-    "build": "polymer build"
+    "build": "polymer build",
+    "lighthouse": "lighthouse https://polymer-2-application-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bower": "^1.8.4",
+    "lighthouse": "2.9.4",
     "polymer-cli": "^1.6.0"
   }
 }
