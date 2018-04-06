@@ -1,0 +1,44 @@
+{
+  "angular-cli": {
+    "name": "Angular CLI",
+    "metrics": [
+      {
+        "description": "First meaningful paint",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "First Interactive",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "Consistently interactive",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "Speed index metric",
+        "displayValue": "1,234ms"
+      }
+    ]
+  },
+  "vue-cli-default": {
+    "name": "VueJS CLI",
+    "metrics": [
+      {
+        "description": "First meaningful paint",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "First Interactive",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "Consistently interactive",
+        "displayValue": "1,234ms"
+      },
+      {
+        "description": "Speed index metric",
+        "displayValue": "1,234ms"
+      }
+    ]
+  }
+}
