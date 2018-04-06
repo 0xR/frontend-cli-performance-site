@@ -2,6 +2,7 @@
 
     <main>
       <header class="main-header">
+        <img src="logo.svg" alt="Xebia" />
         <h1>CLI performance metrics</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
