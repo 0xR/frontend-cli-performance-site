@@ -1,0 +1,23 @@
+{
+  "name": "polymer-2-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "polymer build",
+    "gcp-build": "echo gcp build && npm run build",
+    "start": "polymer serve build/default",
+    "postinstall": "bower install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "polymer-cli": "^1.6.0"
+  }
+}
