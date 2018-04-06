@@ -3,7 +3,7 @@
     <thead>
       <tr>
         <td></td>
-        <td v-for="col in report['angular-cli'].metrics">{{col.description}}</td>
+        <td v-for="heading in headings">{{heading}}</td>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +16,11 @@
 </template>
 <script>
   export default {
+    computed: {
+      headings() {
+        return Object.values(this.report).length ? Object.values(this.report)[0].metrics.map(d => d.description) : [];
+      }
+    },
     props: ['report']
   };
 </script>
