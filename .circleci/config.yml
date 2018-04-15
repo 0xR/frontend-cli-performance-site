@@ -29,6 +29,7 @@ workflows:
   version: 2
   deploy_all:
     jobs:
+      - angular-cli-install
       - angular-cli-deploy:
           requires:
             - angular-cli-install
