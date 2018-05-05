@@ -2,37 +2,72 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+
+deploy-steps: &deploy-steps
+  docker:
+    - image: google/cloud-sdk
+  steps:
+    - checkout
+    - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+    - run: cat ${HOME}/gcloud-service-key.json
+    - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+    - run: gcloud config set project ruben-oostinga-speeltuin
+    - run: cd packages/${package_dir} && pwd
+
 version: 2
 jobs:
-  angular-cli-install:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - v1-node-modules-angular-cli-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-node-modules-angular-cli-
-      - run: cd packages/angular-cli && npm install
-      - save_cache:
-          paths:
-            - packages/angular-cli/node_modules
-          key: v1-node-modules-angular-cli-{{ checksum "package.json" }}
-  angular-cli-deploy:
-    docker:
-      - image: google/cloud-sdk
-    steps:
-      - checkout
-      - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
-      - run: cat ${HOME}/gcloud-service-key.json
-      - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-      - run: gcloud config set project ruben-oostinga-speeltuin
-      - run: cd packages/angular-cli && gcloud app deploy --project=ruben-oostinga-speeltuin
-
+  deploy-angular-cli:
+    environment:
+      - package_dir: angular-cli
+    <<: *deploy-steps
+  deploy-angular-cli:
+    environment:
+      - package_dir: angular-cli
+    <<: *deploy-steps
+  deploy-create-nuxt-app-spa:
+    environment:
+      - package_dir: create-nuxt-app-spa
+    <<: *deploy-steps
+  deploy-create-nuxt-app-universal:
+    environment:
+      - package_dir: create-nuxt-app-universal
+    <<: *deploy-steps
+  deploy-create-react-app:
+    environment:
+      - package_dir: create-react-app
+    <<: *deploy-steps
+  deploy-nextjs:
+    environment:
+      - package_dir: nextjs
+    <<: *deploy-steps
+  deploy-polymer-2-application:
+    environment:
+      - package_dir: polymer-2-application
+    <<: *deploy-steps
+  deploy-vue-cli-default:
+    environment:
+      - package_dir: vue-cli-default
+    <<: *deploy-steps
+  deploy-vue-cli-nuxt:
+    environment:
+      - package_dir: vue-cli-nuxt
+    <<: *deploy-steps
+  deploy-vue-cli-simple-with-prettier:
+    environment:
+      - package_dir: vue-cli-simple-with-prettier
+    <<: *deploy-steps
 
 workflows:
   version: 2
   deploy_all:
     jobs:
-      - angular-cli-deploy
+      - deploy-angular-cli
+      - deploy-create-nuxt-app-spa
+      - deploy-create-nuxt-app-universal
+      - deploy-create-react-app
+      - deploy-nextjs
+      - deploy-polymer-2-application
+      - deploy-vue-cli-default
+      - deploy-vue-cli-nuxt
+      - deploy-vue-cli-simple-with-prettier
+
