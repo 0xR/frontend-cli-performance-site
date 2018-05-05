@@ -21,15 +21,18 @@ jobs:
           key: v1-node-modules-angular-cli-{{ checksum "package.json" }}
   angular-cli-deploy:
     docker:
-      - image: circleci/node:latest
+      - image: google/cloud-sdk
     steps:
-      - run: echo TODO deploy
+      - checkout
+      - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+      - run: cat ${HOME}/gcloud-service-key.json
+      - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+      - run: gcloud config set project ruben-oostinga-speeltuin
+      - run: cd packages/angular-cli && gcloud app deploy --project=ruben-oostinga-speeltuin
+
 
 workflows:
   version: 2
   deploy_all:
     jobs:
-      - angular-cli-install
-      - angular-cli-deploy:
-          requires:
-            - angular-cli-install
+      - angular-cli-deploy
