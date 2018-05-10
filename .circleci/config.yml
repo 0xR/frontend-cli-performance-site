@@ -9,7 +9,6 @@ deploy-steps: &deploy-steps
   steps:
     - checkout
     - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
-    - run: cat ${HOME}/gcloud-service-key.json
     - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
     - run: gcloud config set project ruben-oostinga-speeltuin
     - run: cd packages/${CIRCLE_JOB} && gcloud -q app deploy --version=test
