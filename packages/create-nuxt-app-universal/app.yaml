@@ -1,3 +1,0 @@
-runtime: nodejs
-env: flex
-service: create-nuxt-app-universal

@@ -17,10 +17,6 @@ version: 2
 jobs:
   angular-cli:
     <<: *deploy-steps
-  create-nuxt-app-spa:
-    <<: *deploy-steps
-  create-nuxt-app-universal:
-    <<: *deploy-steps
   create-react-app:
     <<: *deploy-steps
   nextjs:
