@@ -35,8 +35,6 @@ workflows:
   deploy_all:
     jobs:
       - angular-cli
-      - create-nuxt-app-spa
-      - create-nuxt-app-universal
       - create-react-app
       - nextjs
       - polymer-2-application
