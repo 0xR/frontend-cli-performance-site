@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "lighthouse": "lighthouse https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
+    "generate-reports": "node tools/lighthouse.js"
   },
   "repository": {
     "type": "git",

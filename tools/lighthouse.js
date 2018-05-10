@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 function getReportPerProject(path, name) {
   const data = require(`../packages/${path}/report.json`);
@@ -50,12 +51,12 @@ const projects = [
   {
     name: 'create-react-app',
     path: 'create-react-app',
-    output: 'create-react-app/public'
+    output: 'create-react-app/src'
   },
 ];
 
 const totalReport = generateTotalReport();
 projects.forEach(project => {
-  fs.writeFileSync(`../packages/${project.output}/report.json`, JSON.stringify(totalReport, null, 2));
+  fs.writeFileSync(path.join(__dirname, '..', 'packages', project.output, 'report.json'), JSON.stringify(totalReport, null, 2));
 });
 
