@@ -1,16 +1,13 @@
 import report from '../report.json';
 
-const MeasurementRow = ({ metric }) => (
+const MeasurementRow = ({ stack }) => (
   <tr>
-    <td>{metric}</td>
-    {Object.keys(report).map(key => (
-      <td>
-        {
-          report[key].metrics.find(({ description }) => description === metric)
-            .displayValue
-        }
-      </td>
-    ))}
+    <td>
+      <a href={`https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`}>
+        {stack}
+      </a>
+    </td>
+    {report[stack].metrics.map(({ displayValue }, i) => <td key={i}>{displayValue}</td>)}
   </tr>
 );
 
@@ -28,30 +25,22 @@ export default () => (
       </header>
       <table className="measurement-table">
         <thead>
-          <tr>
-            <td />
-            {Object.keys(report).map(key => (
-              <td>
-                <a
-                  href={`https://${key}-dot-ruben-oostinga-speeltuin.appspot.com`}
-                >
-                  {report[key].name}
-                </a>
-              </td>
-            ))}
-          </tr>
+        <tr>
+          <td />
+          {report[Object.keys(report)[0]].metrics.map(({ description }, i) => (
+            <td key={i}>{description}</td>
+          ))}
+        </tr>
         </thead>
         <tbody>
-          {report[Object.keys(report)[0]].metrics.map(({ description }) => (
-            <MeasurementRow metric={description} />
-          ))}
+        {Object.keys(report).map((stack, i) => <MeasurementRow stack={stack} key={i}/>)}
         </tbody>
       </table>
     </main>
     <footer className="main-footer">
-      Made with ❤️ @ <a href="https://xebia.com/">Xebia</a>
+      Made with <span role="img">❤</span>️ @ <a href="https://xebia.com/">Xebia</a>
     </footer>
-    <style jsx>{`
+    <style>{`
       main {
         flex: 1;
         max-width: 800px;
@@ -81,7 +70,7 @@ export default () => (
         background-color: #6f3a6f;
       }
 
-      .measurement-table thead a {
+      .measurement-table thead {
         color: #fff;
       }
 
@@ -97,8 +86,7 @@ export default () => (
       .measurement-table td:first-child {
         text-align: left;
       }
-    `}</style>
-    <style global jsx>{`
+
       body,
       html {
         display: flex;
