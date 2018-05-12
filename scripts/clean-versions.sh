@@ -13,5 +13,12 @@ then
     SERVICE=default
 fi
 
-gcloud app versions list --filter="traffic_split!=1" -s "${SERVICE}" --format="value(version.id)" | xargs gcloud -q app versions delete
+VERSIONS_TO_DELETE=$(gcloud app versions list --filter="traffic_split!=1" -s "${SERVICE}" --format="value(version.id)")
 
+
+if [ -n "$VERSIONS_TO_DELETE" ]
+then
+    echo "$VERSIONS_TO_DELETE" | xargs gcloud -q app versions delete
+else
+    echo "No versions to delete, only running version exists"
+fi
