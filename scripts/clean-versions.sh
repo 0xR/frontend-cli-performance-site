@@ -7,5 +7,11 @@ then
     exit -1
 fi
 
-gcloud app versions list --filter="traffic_split!=1" -s "$1" --format="value(version.id)" | xargs gcloud -q app versions delete
+SERVICE="$1"
+if [ "${SERVICE}" = "create-react-app" ]
+then
+    SERVICE=default
+fi
+
+gcloud app versions list --filter="traffic_split!=1" -s "${SERVICE}" --format="value(version.id)" | xargs gcloud -q app versions delete
 
