@@ -11,7 +11,7 @@ deploy-steps: &deploy-steps
     - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
     - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
     - run: gcloud config set project ruben-oostinga-speeltuin
-    - run: ./scripts/deploy.sh ${CIRCLE_JOB} ${CIRCLECI_BUILD_NUM}
+    - run: ./scripts/deploy.sh ${CIRCLE_JOB} ${CIRCLE_BUILD_NUM}
 
 version: 2
 jobs:
