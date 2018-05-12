@@ -4,7 +4,7 @@ const MeasurementRow = ({ stack }) => (
   <tr>
     <td>
       <a href={`https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`}>
-        {stack}
+        {report[stack].name}
       </a>
     </td>
     {report[stack].metrics.map(({ displayValue }, i) => <td key={i}>{displayValue}</td>)}
