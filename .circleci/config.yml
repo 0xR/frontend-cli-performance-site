@@ -12,8 +12,9 @@ deploy-steps: &deploy-steps
     - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
     - run: gcloud config set project ruben-oostinga-speeltuin
     - run:
-        command: ./scripts/deploy.sh ${CIRCLE_JOB} ${CIRCLE_BUILD_NUM}
+        command: ./scripts/deploy.sh "${CIRCLE_JOB}" "${CIRCLE_BUILD_NUM}"
         no_output_timeout: 15m
+    - run: ./scripts/clean-versions.sh "${CIRCLE_JOB}"
 
 version: 2
 jobs:
