@@ -30,7 +30,7 @@ fi
 
 cd $DIR/..
 
-HASH=$(git ls-files "${PACKAGE_DIR}" | xargs cat | sha1sum - | awk '{print $1}' | cut -c-7)
+HASH=$(git log -1 --pretty=format:%h "${PACKAGE_DIR}")
 VERSION="${VERSION_PREFIX}-${HASH}"
 
 if gcloud app versions list -s "${SERVICE}" | grep -q "${HASH}"
@@ -38,5 +38,5 @@ then
     echo "Skipping deploy, hash ${HASH} already built for service ${SERVICE}"
 else
     cd "${PACKAGE_DIR}"
-    gcloud -q app deploy --version "${VERSION}"
+    echo gcloud -q app deploy --version "${VERSION}"
 fi
