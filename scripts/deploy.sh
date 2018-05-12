@@ -38,5 +38,5 @@ then
     echo "Skipping deploy, hash ${HASH} already built for service ${SERVICE}"
 else
     cd "${PACKAGE_DIR}"
-    echo gcloud -q app deploy --version "${VERSION}"
+    gcloud -q app deploy --version "${VERSION}"
 fi
