@@ -8,6 +8,11 @@ then
 fi
 
 SERVICE="$1"
+if [ "${SERVICE}" = "create-react-app" ]
+then
+    SERVICE=default
+fi
+
 PACKAGE_DIR="$DIR/../packages/$1"
 
 if ! [ -d "${PACKAGE_DIR}" ]
