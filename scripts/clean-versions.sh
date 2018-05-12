@@ -13,6 +13,12 @@ then
     SERVICE=default
 fi
 
+PENDING_OPERATION=$(gcloud app operations list --filter='(op_resource.metadata.target~services/'$SERVICE'$ OR op_resource.metadata.target~services/'$SERVICE'/) AND status=PENDING' --format="value(id)")
+echo "$PENDING_OPERATION" | while read OPERATION_ID
+do
+    gcloud app operations wait "$OPERATION_ID"
+done
+
 VERSIONS_TO_DELETE=$(gcloud app versions list --filter="traffic_split!=1" -s "${SERVICE}" --format="value(version.id)")
 
 
