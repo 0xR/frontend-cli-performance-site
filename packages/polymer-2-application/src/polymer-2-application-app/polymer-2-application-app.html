@@ -1,84 +1,107 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../styles.html">
 <dom-module id="polymer-2-application-app">
-  <template>
-    <style include="styles"></style>
-    <style>
-      :host {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
+    <template>
+        <style include="styles"></style>
+        <style>
+            :host {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+            }
+        </style>
+        <iron-ajax
+                auto
+                url="/src/report.json"
+                last-response="{{report}}"
+        >
+        </iron-ajax>
+        <main>
+            <header class="main-header">
+                <h1>CLI performance metrics</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                </p>
+            </header>
+
+            <template is="dom-if" if="[[report]]">
+                <table class="measurement-table">
+                    <thead>
+                    <tr>
+                        <td></td>
+                        <template is="dom-repeat" as="mestricDescription" items="{{_getMetricsDescriptions()}}">
+                            <td>[[mestricDescription]]</td>
+                        </template>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <template is="dom-repeat" as="stack" items="{{_getKeys(report.*)}}">
+                        <tr>
+                            <td>
+                                <a href="[[_getHref(stack)]]">
+                                    [[_itemByKey(report.*, stack, 'name')]]
+                                </a>
+                            </td>
+                            <template is="dom-repeat" as="metric" items="{{_itemByKey(report.*, stack, 'metrics')}}">
+                                <td>[[metric.displayValue]]</td>
+                            </template>
+                        </tr>
+                    </template>
+                    </tbody>
+                </table>
+            </template>
+        </main>
+
+        <footer class="main-footer">
+            Made with ❤️ @ <a href="https://xebia.com/">Xebia</a>
+        </footer>
+    </template>
+
+    <script>
+      /**
+       * @customElement
+       * @polymer
+       */
+      class Polymer2ApplicationApp extends Polymer.Element {
+        static get is() {
+          return 'polymer-2-application-app';
+        }
+
+        static get properties() {
+          return {
+            properties: {
+              measurements: {
+                type: Array
+              },
+              tableContents: {
+                type: Array
+              }
+            }
+          };
+        }
+
+        _getMetricsDescriptions() {
+          return this.report[Object.keys(this.report)[0]].metrics
+            .map(({ description }) => description);
+        }
+
+        _getKeys(change) {
+          return Object.keys(change.base);
+        }
+
+        _itemByKey(change, key, path) {
+          return this.get(path, change.base[key]);
+        }
+
+        _getHref(stack) {
+          return `https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`;
+        }
       }
-    </style>
 
-    <main>
-      <header class="main-header">
-        <h1>CLI performance metrics</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        </p>
-      </header>
-
-      <table class="measurement-table">
-        <thead>
-        <tr>
-          <td></td>
-          <td><a href="https://angular-cli-dot-ruben-oostinga-speeltuin.appspot.com/">Angular</a></td>
-          <td><a href="https://create-react-app-dot-ruben-oostinga-speeltuin.appspot.com/">React</a></td>
-          <td><a href="https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/">VueJS</a></td>
-          <td><a href="https://polymer-2-application-dot-ruben-oostinga-speeltuin.appspot.com/">Polymer</a></td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>Lighthouse Performance</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-          <tr>
-          <td>First Meaningful Paint</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <td>First Interactive</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        </tbody>
-      </table>
-    </main>
-
-    <footer class="main-footer">
-      Made with ❤️ @ <a href="https://xebia.com/">Xebia</a>
-    </footer>
-  </template>
-
-  <script>
-    /**
-     * @customElement
-     * @polymer
-     */
-    class Polymer2ApplicationApp extends Polymer.Element {
-      static get is() { return 'polymer-2-application-app'; }
-      static get properties() {
-        return {
-          metrics: {
-            type: Object,
-            value: {}
-          }
-        };
-      }
-    }
-
-    window.customElements.define(Polymer2ApplicationApp.is, Polymer2ApplicationApp);
-  </script>
+      window.customElements.define(Polymer2ApplicationApp.is, Polymer2ApplicationApp);
+    </script>
 </dom-module>
