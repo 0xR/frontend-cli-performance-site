@@ -1,0 +1,16 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/angular-cli/package.json",
+        "packages/create-react-app/package.json",
+        "packages/nextjs/package.json",
+        "packages/polymer-2-application/package.json",
+        "packages/vue-cli-default/package.json",
+        "packages/vue-cli-nuxt/package.json",
+        "packages/vue-cli-simple-with-prettier/package.json"
+      ]
+    }
+  }
+}
