@@ -1,5 +1,7 @@
 # Frontend CLI performance
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/0xR/frontend-cli-performance-site.svg)](https://greenkeeper.io/)
+
 We are measuring the performance (time until first render) for apps created with several CLIs:
 
 * Angular CLI
