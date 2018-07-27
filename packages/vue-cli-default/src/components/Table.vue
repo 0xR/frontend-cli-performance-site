@@ -2,13 +2,11 @@
   <table class="measurement-table">
     <thead>
       <tr>
-        <tr>
           <td />
           <td>First meaningful paint</td>
           <td>Visually complete</td>
           <td>Time to intefractive</td>
           <td>Loaded</td>
-        </tr>
       </tr>
     </thead>
     <tbody>
