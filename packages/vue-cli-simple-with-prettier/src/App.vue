@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <main>
+      <header class="main-header">
+        <img src="logo.svg" alt="Xebia" />
+        <h1>CLI performance metrics</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+      </header>
+
+      <Table :report="report" />
+    </main>
+
+
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Table from "./components/Table";
+import "./main.css";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Table
+  },
+  data() {
+    return {
+      report: []
+    };
+  },
+  async created() {
+    this.report = await (await fetch("report.json")).json();
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+div {
+  height: 100%;
 }
 </style>
