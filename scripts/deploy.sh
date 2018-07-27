@@ -35,15 +35,15 @@ cd $DIR/..
 HASH=$(git log -1 --pretty=format:%h "${PACKAGE_DIR}")
 VERSION="${VERSION_PREFIX}-${HASH}"
 
-if gcloud app versions list -s "${SERVICE}" | grep -q "${HASH}"
+if [ $VERSION_PREFIX != "local" ] && (gcloud app versions list -s "${SERVICE}" | grep -q "${HASH}")
 then
     echo "Skipping deploy, hash ${HASH} already built for service ${SERVICE}"
 else
     cd "${PACKAGE_DIR}"
 
     # Run build
-    npm install
-    npm run build
-
-    gcloud -q app deploy --version "${VERSION}"
+#    npm install
+#    npm run build
+#
+#    gcloud -q app deploy --version "${VERSION}"
 fi
