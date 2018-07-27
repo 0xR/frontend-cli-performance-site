@@ -1,19 +1,6 @@
 import React from 'react';
 import image from './marc-olivier-jodoin-291607-unsplash.jpg';
 
-const MeasurementRow = ({ stack, report }) => (
-  <tr>
-    <td>
-      <a href={`https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`}>
-        {report[stack].name}
-      </a>
-    </td>
-    {report[stack].metrics.map(({ displayValue }, i) => (
-      <td key={i}>{displayValue}</td>
-    ))}
-  </tr>
-);
-
 export default class App extends React.Component {
   state = { report: null }
 
@@ -33,13 +20,20 @@ export default class App extends React.Component {
               <thead>
               <tr>
                 <td />
-                {report[Object.keys(report)[0]].metrics.map(({ description }, i) => (
-                  <td key={i}>{description}</td>
-                ))}
+                <td>First meaningful paint</td>
+                <td>visually_complete</td>
+                <td>first_interactive</td>
+                <td>loaded</td>
               </tr>
               </thead>
               <tbody>
-              {Object.keys(report).map((stack, i) => <MeasurementRow report={report} stack={stack} key={i} />)}
+              {report.map(test => <tr key={test.label}>
+                <td>{test.label}</td>
+                <td>{test.metrics.first_meaningful_paint}</td>
+                <td>{test.metrics.visually_complete}</td>
+                <td>{test.metrics.first_interactive}</td>
+                <td>{test.metrics.loaded}</td>
+              </tr>)}
               </tbody>
             </table>
           )}
@@ -70,6 +64,7 @@ export default class App extends React.Component {
 
       .measurement-table {
         margin: auto;
+        width: 100%;
         border-spacing: 0;
         border-collapse: collapse;
       }
