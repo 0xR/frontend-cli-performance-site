@@ -29,8 +29,8 @@
         report: []
       }
     },
-    async created() {
-      this.report = await (await fetch('report.json')).json();
+    created() {
+      fetch('report.json').then(res => res.json()).then(res => this.report = res);
     }
   }
 </script>
