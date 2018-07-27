@@ -2,14 +2,6 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-build-steps: &build-steps
-  docker:
-    - image: circleci/node
-  steps:
-    - checkout
-    - run:
-        command: ./scripts/build.sh "${CIRCLE_JOB}"
-        no_output_timeout: 15m
 
 deploy-steps: &deploy-steps
   docker:
@@ -17,6 +9,8 @@ deploy-steps: &deploy-steps
   steps:
     - checkout
     - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+    - run: curl -sL https://deb.nodesource.com/setup_8.x | bash -
+    - run: apt-get install -y nodejs
     - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
     - run: gcloud config set project ruben-oostinga-speeltuin
     - run:
@@ -26,20 +20,6 @@ deploy-steps: &deploy-steps
 
 version: 2
 jobs:
-  build-angular-cli:
-    <<: *build-steps
-  build-create-react-app:
-    <<: *build-steps
-  build-nextjs:
-    <<: *build-steps
-  build-polymer-2-application:
-    <<: *build-steps
-  build-vue-cli-default:
-    <<: *build-steps
-  build-vue-cli-nuxt:
-    <<: *build-steps
-  build-vue-cli-simple-with-prettier:
-    <<: *build-steps
   angular-cli:
     <<: *deploy-steps
   create-react-app:
@@ -59,32 +39,11 @@ workflows:
   version: 2
   deploy_all:
     jobs:
-      - build-angular-cli
-      - build-create-react-app
-      - build-nextjs
-      - build-polymer-2-application
-      - build-vue-cli-default
-      - build-vue-cli-nuxt
-      - build-vue-cli-simple-with-prettier
-      - angular-cli:
-          requires:
-          - build-angular-cli
-      - create-react-app:
-          requires:
-          - build-create-react-app
-      - nextjs:
-          requires:
-          - build-nextjs
-      - polymer-2-application:
-          requires:
-          - build-polymer-2-application
-      - vue-cli-default:
-          requires:
-          - build-vue-cli-default
-      - vue-cli-nuxt:
-          requires:
-          - build-vue-cli-nuxt
-      - vue-cli-simple-with-prettier:
-          requires:
-          - build-vue-cli-simple-with-prettier
+      - angular-cli
+      - create-react-app
+      - nextjs
+      - polymer-2-application
+      - vue-cli-default
+      - vue-cli-nuxt
+      - vue-cli-simple-with-prettier
 
