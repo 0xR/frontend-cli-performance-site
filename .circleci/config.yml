@@ -7,8 +7,9 @@ build-steps: &build-steps
     - image: circleci/node
   steps:
     - checkout
-    - run: npm install
-    - run: npm build
+    - run:
+        command: ./scripts/build.sh "${CIRCLE_JOB}"
+        no_output_timeout: 15m
 
 deploy-steps: &deploy-steps
   docker:
