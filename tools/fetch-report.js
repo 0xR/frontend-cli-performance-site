@@ -40,7 +40,7 @@ const projects = [
   {
     name: 'create-react-app',
     path: 'create-react-app',
-    output: 'create-react-app/src'
+    output: 'create-react-app/public'
   }
 ];
 
