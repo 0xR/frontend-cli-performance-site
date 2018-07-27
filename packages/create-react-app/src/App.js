@@ -6,6 +6,8 @@ export default class App extends React.Component {
 
   componentDidMount = () => fetch("report.json").then(res => res.json()).then(report => this.setState({ report }))
 
+  formatNumber = number => number ? number.toLocaleString() + " ms" : "null"
+
   render() {
     const { report } = this.state
     return (
@@ -28,11 +30,11 @@ export default class App extends React.Component {
               </thead>
               <tbody>
               {report.map(test => <tr key={test.label}>
-                <td>{test.label}</td>
-                <td>{test.metrics.first_meaningful_paint}</td>
-                <td>{test.metrics.visually_complete}</td>
-                <td>{test.metrics.first_interactive}</td>
-                <td>{test.metrics.loaded}</td>
+                <td>{test.label} ms</td>
+                <td>{this.formatNumber(test.metrics.first_meaningful_paint)}</td>
+                <td>{this.formatNumber(test.metrics.visually_complete)}</td>
+                <td>{this.formatNumber(test.metrics.first_interactive)}</td>
+                <td>{this.formatNumber(test.metrics.loaded)}</td>
               </tr>)}
               </tbody>
             </table>
