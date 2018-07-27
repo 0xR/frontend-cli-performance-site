@@ -62,6 +62,27 @@
       }
     ]
   },
+  "vue-cli-simple-with-prettier": {
+    "name": "VueJS CLI (simple + Prettier)",
+    "metrics": [
+      {
+        "description": "First meaningful paint",
+        "displayValue": "2,120 ms"
+      },
+      {
+        "description": "Perceptual Speed Index",
+        "displayValue": "2,185"
+      },
+      {
+        "description": "First Interactive (beta)",
+        "displayValue": "2,120 ms"
+      },
+      {
+        "description": "Consistently Interactive (beta)",
+        "displayValue": "2,120 ms"
+      }
+    ]
+  },
   "create-react-app": {
     "name": "create-react-app",
     "metrics": [

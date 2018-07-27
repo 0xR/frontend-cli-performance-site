@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "name": "frontend-cli-performance-site",
-  "description": "We are measuring the performance (time until first render) for apps created with several CLIs:",
+  "description": "We are measuring the performance (time until first render) for apps created with several CLIs",
   "version": "1.0.0",
   "main": "tools/lighthouse.js",
   "dependencies": {
