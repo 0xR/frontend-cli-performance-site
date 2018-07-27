@@ -16,8 +16,6 @@ deploy-steps: &deploy-steps
   steps:
     - checkout
     - run: echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
-    - run: curl -sL https://deb.nodesource.com/setup_8.x | bash -
-    - run: apt-get install -y nodejs
     - run: gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
     - run: gcloud config set project ruben-oostinga-speeltuin
     - run:
