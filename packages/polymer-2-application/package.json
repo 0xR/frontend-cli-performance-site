@@ -9,8 +9,7 @@
   "scripts": {
     "start": "polymer serve build/default -p 8080 -H 0.0.0.0",
     "dev": "polymer serve",
-    "install": "polymer install",
-    "postinstall": "bower install --allow-root",
+    "postinstall": "polymer install",
     "build": "polymer build",
     "lighthouse": "lighthouse https://polymer-2-application-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
   },
