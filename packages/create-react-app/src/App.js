@@ -34,10 +34,8 @@ export default class App extends React.Component {
               <tbody>
                 {report.map(test => (
                   <tr key={test.label}>
-                    <td>{test.label}</td>
-                    <td>
-                      {this.formatNumber(test.metrics.first_meaningful_paint)}
-                    </td>
+                    <td><a href={test.url}>{test.label}</a></td>
+                    <td>{this.formatNumber(test.metrics.first_meaningful_paint)}</td>
                     <td>{this.formatNumber(test.metrics.visually_complete)}</td>
                     <td>{this.formatNumber(test.metrics.first_interactive)}</td>
                     <td>{this.formatNumber(test.metrics.loaded)}</td>
