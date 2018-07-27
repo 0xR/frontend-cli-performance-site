@@ -19,6 +19,10 @@ deploy-steps: &deploy-steps
     - run: ./scripts/clean-versions.sh "${CIRCLE_JOB}"
 
 version: 2
+general:
+  branches:
+    only:
+      - master
 jobs:
   angular-cli:
     <<: *deploy-steps
