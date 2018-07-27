@@ -8,11 +8,12 @@
   "version": "1.0.0",
   "main": "tools/lighthouse.js",
   "dependencies": {
-    "lighthouse": "2.9.4"
+    "lighthouse": "2.9.4",
+    "node-fetch": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "generate-reports": "node tools/lighthouse.js"
+    "generate-reports": "node tools/fetch-report.js"
   },
   "repository": {
     "type": "git",

@@ -1,107 +1,633 @@
-{
-  "angular-cli": {
-    "name": "Angular CLI",
-    "metrics": [
-      {
-        "description": "First meaningful paint",
-        "displayValue": "1,870 ms"
-      },
-      {
-        "description": "Perceptual Speed Index",
-        "displayValue": "1,897"
-      },
-      {
-        "description": "First Interactive (beta)",
-        "displayValue": "1,870 ms"
-      },
-      {
-        "description": "Consistently Interactive (beta)",
-        "displayValue": "1,870 ms"
-      }
-    ]
+[
+  {
+    "label": "vue-cli-default",
+    "metrics": {
+      "test_id": "180727_9F_b83b26805db916c54661733c198938f6",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_9F_b83b26805db916c54661733c198938f6",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 861,
+      "dom_content_loaded": 1007,
+      "render": 1100,
+      "visually_complete": 1200,
+      "first_interactive": 1039,
+      "first_meaningful_paint": 1062,
+      "dom": 1171,
+      "loaded": 1808,
+      "size": 37395,
+      "image_saving": 0,
+      "requests": 7,
+      "pagespeed": 87,
+      "speedindex": 1137,
+      "html_requests": 1,
+      "html_size": 1171,
+      "css_requests": 1,
+      "css_size": 486,
+      "js_requests": 3,
+      "js_size": 34074,
+      "image_requests": 2,
+      "image_size": 1664,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 1,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_9F_b83b26805db916c54661733c198938f6",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_9F_b83b26805db916c54661733c198938f6&file=2_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [
+        {
+          "hero": "biggest_img",
+          "value": "1200"
+        },
+        {
+          "hero": "h1",
+          "value": "1200"
+        }
+      ],
+      "first_painted_hero": 1200,
+      "last_painted_hero": 1200
+    }
   },
-  "polymer-2-application": {
-    "name": "Polymer CLI",
-    "metrics": [
-      {
-        "description": "First meaningful paint",
-        "displayValue": "5,040 ms"
-      },
-      {
-        "description": "Perceptual Speed Index",
-        "displayValue": "5,072"
-      },
-      {
-        "description": "First Interactive (beta)",
-        "displayValue": "5,040 ms"
-      },
-      {
-        "description": "Consistently Interactive (beta)",
-        "displayValue": "5,040 ms"
-      }
-    ]
+  {
+    "label": "angular-cli",
+    "metrics": {
+      "test_id": "180727_28_567e7372b3adce09b93b1acb178c61a7",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_28_567e7372b3adce09b93b1acb178c61a7",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 291,
+      "dom_content_loaded": 981,
+      "render": 1100,
+      "visually_complete": 1500,
+      "first_interactive": 1011,
+      "first_meaningful_paint": 1442,
+      "dom": 1008,
+      "loaded": 1473,
+      "size": 90045,
+      "image_saving": 0,
+      "requests": 7,
+      "pagespeed": 97,
+      "speedindex": 1369,
+      "html_requests": 1,
+      "html_size": 565,
+      "css_requests": 1,
+      "css_size": 282,
+      "js_requests": 4,
+      "js_size": 83639,
+      "image_requests": 1,
+      "image_size": 5559,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 1,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_28_567e7372b3adce09b93b1acb178c61a7",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_28_567e7372b3adce09b93b1acb178c61a7&file=2_screen.jpg",
+      "custom_metrics": [
+        {
+          "mark": "Zone",
+          "value": "900"
+        },
+        {
+          "mark": "Zone_ZoneAwarePromise",
+          "value": "901"
+        },
+        {
+          "mark": "Zone_toString",
+          "value": "901"
+        },
+        {
+          "mark": "Zone_util",
+          "value": "901"
+        },
+        {
+          "mark": "Zone_timers",
+          "value": "901"
+        },
+        {
+          "mark": "Zone_requestAnimationFrame",
+          "value": "902"
+        },
+        {
+          "mark": "Zone_blocking",
+          "value": "902"
+        },
+        {
+          "mark": "Zone_EventTarget",
+          "value": "902"
+        },
+        {
+          "mark": "Zone_on_property",
+          "value": "933"
+        },
+        {
+          "mark": "Zone_canvas",
+          "value": "936"
+        },
+        {
+          "mark": "Zone_XHR",
+          "value": "936"
+        },
+        {
+          "mark": "Zone_geolocation",
+          "value": "936"
+        },
+        {
+          "mark": "Zone_PromiseRejectionEvent",
+          "value": "937"
+        },
+        {
+          "mark": "Zone",
+          "value": "0.6000000001"
+        },
+        {
+          "mark": "Zone:ZoneAwarePromise",
+          "value": "0.3999999999"
+        },
+        {
+          "mark": "Zone:toString",
+          "value": "0.1"
+        },
+        {
+          "mark": "Zone:util",
+          "value": "0"
+        },
+        {
+          "mark": "Zone:timers",
+          "value": "0.3999999999"
+        },
+        {
+          "mark": "Zone:requestAnimationFrame",
+          "value": "0"
+        },
+        {
+          "mark": "Zone:blocking",
+          "value": "0.1"
+        },
+        {
+          "mark": "Zone:EventTarget",
+          "value": "30.8"
+        },
+        {
+          "mark": "Zone:on_property",
+          "value": "3.3000000001"
+        },
+        {
+          "mark": "Zone:canvas",
+          "value": "0.1999999999"
+        },
+        {
+          "mark": "Zone:XHR",
+          "value": "0.1999999999"
+        },
+        {
+          "mark": "Zone:geolocation",
+          "value": "0.2000000002"
+        },
+        {
+          "mark": "Zone:PromiseRejectionEvent",
+          "value": "0.1"
+        }
+      ],
+      "hero_metrics": [
+        {
+          "hero": "h1",
+          "value": "1100"
+        }
+      ],
+      "first_painted_hero": 1100,
+      "last_painted_hero": 1100
+    }
   },
-  "vue-cli-default": {
-    "name": "VueJS CLI",
-    "metrics": [
-      {
-        "description": "First meaningful paint",
-        "displayValue": "1,660 ms"
-      },
-      {
-        "description": "Perceptual Speed Index",
-        "displayValue": "1,674"
-      },
-      {
-        "description": "First Interactive (beta)",
-        "displayValue": "1,660 ms"
-      },
-      {
-        "description": "Consistently Interactive (beta)",
-        "displayValue": "1,660 ms"
-      }
-    ]
+  {
+    "label": "vue-cli-simple",
+    "metrics": {
+      "test_id": "180727_XV_4f87f48e2512f220aeb3ab617a697129",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_XV_4f87f48e2512f220aeb3ab617a697129",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 3,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 278,
+      "dom_content_loaded": 1060,
+      "render": 1100,
+      "visually_complete": 1200,
+      "first_interactive": 1092,
+      "first_meaningful_paint": 1129,
+      "dom": 1122,
+      "loaded": 1858,
+      "size": 36942,
+      "image_saving": 0,
+      "requests": 7,
+      "pagespeed": 87,
+      "speedindex": 1176,
+      "html_requests": 1,
+      "html_size": 711,
+      "css_requests": 1,
+      "css_size": 496,
+      "js_requests": 3,
+      "js_size": 34055,
+      "image_requests": 2,
+      "image_size": 1680,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 1,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_XV_4f87f48e2512f220aeb3ab617a697129",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_XV_4f87f48e2512f220aeb3ab617a697129&file=3_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [
+        {
+          "hero": "biggest_img",
+          "value": "1200"
+        },
+        {
+          "hero": "h1",
+          "value": "1200"
+        }
+      ],
+      "first_painted_hero": 1200,
+      "last_painted_hero": 1200
+    }
   },
-  "vue-cli-simple-with-prettier": {
-    "name": "VueJS CLI (simple + Prettier)",
-    "metrics": [
-      {
-        "description": "First meaningful paint",
-        "displayValue": "2,120 ms"
-      },
-      {
-        "description": "Perceptual Speed Index",
-        "displayValue": "2,185"
-      },
-      {
-        "description": "First Interactive (beta)",
-        "displayValue": "2,120 ms"
-      },
-      {
-        "description": "Consistently Interactive (beta)",
-        "displayValue": "2,120 ms"
-      }
-    ]
+  {
+    "label": "nextjs",
+    "metrics": {
+      "test_id": "180727_67_2c7d637771c59341ead3b07bd12e1d15",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_67_2c7d637771c59341ead3b07bd12e1d15",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 268,
+      "dom_content_loaded": 326,
+      "render": 400,
+      "visually_complete": 400,
+      "first_interactive": 329,
+      "first_meaningful_paint": 329,
+      "dom": 1259,
+      "loaded": 1439,
+      "size": 71234,
+      "image_saving": 0,
+      "requests": 5,
+      "pagespeed": 100,
+      "speedindex": 400,
+      "html_requests": 2,
+      "html_size": 2735,
+      "css_requests": 0,
+      "css_size": 0,
+      "js_requests": 3,
+      "js_size": 68499,
+      "image_requests": 0,
+      "image_size": 0,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 0,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_67_2c7d637771c59341ead3b07bd12e1d15",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_67_2c7d637771c59341ead3b07bd12e1d15&file=2_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [
+        {
+          "hero": "h1",
+          "value": "400"
+        }
+      ],
+      "first_painted_hero": 400,
+      "last_painted_hero": 400
+    }
   },
-  "create-react-app": {
-    "name": "create-react-app",
-    "metrics": [
-      {
-        "description": "First meaningful paint",
-        "displayValue": "2,190 ms"
-      },
-      {
-        "description": "Perceptual Speed Index",
-        "displayValue": "2,487"
-      },
-      {
-        "description": "First Interactive (beta)",
-        "displayValue": "2,190 ms"
-      },
-      {
-        "description": "Consistently Interactive (beta)",
-        "displayValue": "2,190 ms"
-      }
-    ]
+  {
+    "label": "nuxtjs",
+    "metrics": {
+      "test_id": "180727_BJ_cecdea57cd5d71d8122cd6cf8778390e",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_BJ_cecdea57cd5d71d8122cd6cf8778390e",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 0,
+      "dom_content_loaded": 0,
+      "render": 0,
+      "visually_complete": 0,
+      "first_interactive": null,
+      "first_meaningful_paint": null,
+      "dom": 0,
+      "loaded": 30096,
+      "size": 0,
+      "image_saving": 0,
+      "requests": 2,
+      "pagespeed": 0,
+      "speedindex": 0,
+      "html_requests": 0,
+      "html_size": 0,
+      "css_requests": 0,
+      "css_size": 0,
+      "js_requests": 0,
+      "js_size": 0,
+      "image_requests": 0,
+      "image_size": 0,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 2,
+      "other_size": 0,
+      "third_party_requests": 1,
+      "third_party_size": 0,
+      "blocking_scripts": null,
+      "blocking_css": null,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_BJ_cecdea57cd5d71d8122cd6cf8778390e",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_BJ_cecdea57cd5d71d8122cd6cf8778390e&file=2_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [],
+      "first_painted_hero": null,
+      "last_painted_hero": null
+    }
+  },
+  {
+    "label": "create-react-app",
+    "metrics": {
+      "test_id": "180727_MP_15e6a6fd440c9a708515e87992208f5e",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_MP_15e6a6fd440c9a708515e87992208f5e",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 283,
+      "dom_content_loaded": 429,
+      "render": 500,
+      "visually_complete": 500,
+      "first_interactive": 473,
+      "first_meaningful_paint": 473,
+      "dom": 463,
+      "loaded": 1220,
+      "size": 45751,
+      "image_saving": 0,
+      "requests": 6,
+      "pagespeed": 90,
+      "speedindex": 500,
+      "html_requests": 2,
+      "html_size": 938,
+      "css_requests": 1,
+      "css_size": 219,
+      "js_requests": 2,
+      "js_size": 41019,
+      "image_requests": 1,
+      "image_size": 3575,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 1,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_MP_15e6a6fd440c9a708515e87992208f5e",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_MP_15e6a6fd440c9a708515e87992208f5e&file=2_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [
+        {
+          "hero": "h1",
+          "value": "500"
+        }
+      ],
+      "first_painted_hero": 500,
+      "last_painted_hero": 500
+    }
+  },
+  {
+    "label": "polymer-2",
+    "metrics": {
+      "test_id": "180727_80_83ae4e6fb1f5752dbc9cf2e4af55cce6",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532690225,
+      "test": "180727_80_83ae4e6fb1f5752dbc9cf2e4af55cce6",
+      "region": "eu-central-1",
+      "status": -1,
+      "run": 0,
+      "browser": "Chrome",
+      "browser_version": null,
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 0,
+      "dom_content_loaded": null,
+      "render": 0,
+      "visually_complete": 0,
+      "first_interactive": null,
+      "first_meaningful_paint": null,
+      "dom": 0,
+      "loaded": 0,
+      "size": 0,
+      "image_saving": 0,
+      "requests": 0,
+      "pagespeed": 0,
+      "speedindex": 0,
+      "html_requests": 0,
+      "html_size": 0,
+      "css_requests": 0,
+      "css_size": 0,
+      "js_requests": 0,
+      "js_size": 0,
+      "image_requests": 0,
+      "image_size": 0,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": null,
+      "blocking_css": null,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_80_83ae4e6fb1f5752dbc9cf2e4af55cce6",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_80_83ae4e6fb1f5752dbc9cf2e4af55cce6&file=1_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [],
+      "first_painted_hero": null,
+      "last_painted_hero": null
+    }
+  },
+  {
+    "label": "gatsby",
+    "metrics": {
+      "test_id": "180727_SQ_0d4e189aeeb94e604ec1efd75bce1658",
+      "timezone": "UTC",
+      "day": "2018-07-27",
+      "timestamp": 1532693444,
+      "test": "180727_SQ_0d4e189aeeb94e604ec1efd75bce1658",
+      "region": "eu-central-1",
+      "status": 0,
+      "run": 2,
+      "browser": "Chrome",
+      "browser_version": "68.0.3440.75",
+      "viewport_width": 1280,
+      "viewport_height": 800,
+      "pixel_ratio": 1,
+      "bandwidth_down": 5000,
+      "bandwidth_up": 1000,
+      "bandwidth_latency": 28,
+      "bandwidth_packet_loss_rate": 0,
+      "byte": 162,
+      "dom_content_loaded": 416,
+      "render": 300,
+      "visually_complete": 300,
+      "first_interactive": 416,
+      "first_meaningful_paint": 219,
+      "dom": 439,
+      "loaded": 580,
+      "size": 89843,
+      "image_saving": 0,
+      "requests": 9,
+      "pagespeed": 96,
+      "speedindex": 300,
+      "html_requests": 2,
+      "html_size": 3514,
+      "css_requests": 0,
+      "css_size": 0,
+      "js_requests": 7,
+      "js_size": 86329,
+      "image_requests": 0,
+      "image_size": 0,
+      "font_requests": 0,
+      "font_size": 0,
+      "text_requests": 0,
+      "text_size": 0,
+      "flash_requests": 0,
+      "flash_size": 0,
+      "other_requests": 0,
+      "other_size": 0,
+      "third_party_requests": 0,
+      "third_party_size": 0,
+      "blocking_scripts": 0,
+      "blocking_css": 0,
+      "har": "http://wpt1.speedcurve.com/export.php?test=180727_SQ_0d4e189aeeb94e604ec1efd75bce1658",
+      "screen": "http://wpt1.speedcurve.com/getfile.php?test=180727_SQ_0d4e189aeeb94e604ec1efd75bce1658&file=2_screen.jpg",
+      "custom_metrics": [],
+      "hero_metrics": [
+        {
+          "hero": "h1",
+          "value": "300"
+        }
+      ],
+      "first_painted_hero": 300,
+      "last_painted_hero": 300
+    }
   }
-}
+]

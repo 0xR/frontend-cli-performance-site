@@ -9,33 +9,38 @@ const MeasurementRow = ({ stack }) => (
         {report[stack].name}
       </a>
     </td>
-    {report[stack].metrics.map(({ displayValue }, i) => <td key={i}>{displayValue}</td>)}
+    {report[stack].metrics.map(({ displayValue }, i) => (
+      <td key={i}>{displayValue}</td>
+    ))}
   </tr>
 );
 
 export default () => (
   <div>
-  <header className="main-header">
+    <header className="main-header">
       <h1>CLI performance metrics</h1>
-  </header>
+    </header>
     <main>
-      <img src={image} alt="cars" className="hero-image"/>
+      <img src={image} alt="cars" className="hero-image" />
       <table className="measurement-table">
         <thead>
           <tr>
             <td />
-            {report[Object.keys(report)[0]].metrics.map(({ description }, i) => (
-              <td key={i}>{description}</td>
-            ))}
+            {report[Object.keys(report)[0]].metrics.map(
+              ({ description }, i) => <td key={i}>{description}</td>
+            )}
           </tr>
         </thead>
         <tbody>
-          {Object.keys(report).map((stack, i) => <MeasurementRow stack={stack} key={i}/>)}
+          {Object.keys(report).map((stack, i) => (
+            <MeasurementRow stack={stack} key={i} />
+          ))}
         </tbody>
       </table>
     </main>
     <footer className="main-footer">
-      Made with <span role="img">❤</span>️ @ <a href="https://xebia.com/">Xebia</a>
+      Made with <span role="img">❤</span>️ @{' '}
+      <a href="https://xebia.com/">Xebia</a>
     </footer>
     <style>{`
       main {
