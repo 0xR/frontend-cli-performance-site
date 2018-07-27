@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "bower": "^1.8.4",
-    "lighthouse": "2.9.4",
+    "lighthouse": "3.0.3",
     "polymer-cli": "^1.6.0"
   }
 }
