@@ -1,5 +1,6 @@
 import React from 'react';
 import report from './report.json';
+import image from './marc-olivier-jodoin-291607-unsplash.jpg';
 
 const MeasurementRow = ({ stack }) => (
   <tr>
@@ -14,16 +15,11 @@ const MeasurementRow = ({ stack }) => (
 
 export default () => (
   <div>
+  <header className="main-header">
+      <h1>CLI performance metrics</h1>
+  </header>
     <main>
-      <header className="main-header">
-        <h1>CLI performance metrics</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        </p>
-      </header>
+      <img src={image} alt="cars" className="hero-image"/>
       <table className="measurement-table">
         <thead>
           <tr>
@@ -46,12 +42,14 @@ export default () => (
         flex: 1;
         max-width: 800px;
         margin: auto;
-        padding: 50px 0 0;
       }
 
       .main-header {
-        margin-bottom: 50px;
         text-align: center;
+      }
+
+      .hero-image {
+        display: block;
       }
 
       .main-footer {
@@ -62,7 +60,6 @@ export default () => (
 
       .measurement-table {
         margin: auto;
-        border: 1px solid #eeeeee;
         border-spacing: 0;
         border-collapse: collapse;
       }
