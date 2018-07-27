@@ -43,7 +43,7 @@ else
 
     # Run build
     npm install
-    npm build
+    npm run build
 
     gcloud -q app deploy --version "${VERSION}"
 fi
