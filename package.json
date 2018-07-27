@@ -8,7 +8,7 @@
   "version": "1.0.0",
   "main": "tools/lighthouse.js",
   "dependencies": {
-    "lighthouse": "2.9.4"
+    "lighthouse": "3.0.3"
   },
   "devDependencies": {},
   "scripts": {
