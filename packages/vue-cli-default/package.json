@@ -6,7 +6,6 @@
     "start": "http-server dist",
     "dev": "npm run serve",
     "serve": "vue-cli-service serve --open",
-    "gcp-build": "npm run build",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lighthouse": "lighthouse https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/ --output json --output-path report.json"
