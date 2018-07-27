@@ -1,6 +1,7 @@
 [
   {
     "label": "vue-cli-default",
+    "url": "https://vue-cli-default-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_9F_b83b26805db916c54661733c198938f6",
       "timezone": "UTC",
@@ -71,6 +72,7 @@
   },
   {
     "label": "angular-cli",
+    "url": "https://angular-cli-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_28_567e7372b3adce09b93b1acb178c61a7",
       "timezone": "UTC",
@@ -242,6 +244,7 @@
   },
   {
     "label": "vue-cli-simple",
+    "url": "https://vue-cli-simple-with-prettier-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_XV_4f87f48e2512f220aeb3ab617a697129",
       "timezone": "UTC",
@@ -312,6 +315,7 @@
   },
   {
     "label": "nextjs",
+    "url": "https://nextjs-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_67_2c7d637771c59341ead3b07bd12e1d15",
       "timezone": "UTC",
@@ -378,6 +382,7 @@
   },
   {
     "label": "nuxtjs",
+    "url": "https://vue-cli-nuxt-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_BJ_cecdea57cd5d71d8122cd6cf8778390e",
       "timezone": "UTC",
@@ -439,6 +444,7 @@
   },
   {
     "label": "create-react-app",
+    "url": "https://ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_MP_15e6a6fd440c9a708515e87992208f5e",
       "timezone": "UTC",
@@ -505,6 +511,7 @@
   },
   {
     "label": "polymer-2",
+    "url": "https://polymer-2-application-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_80_83ae4e6fb1f5752dbc9cf2e4af55cce6",
       "timezone": "UTC",
@@ -566,6 +573,7 @@
   },
   {
     "label": "gatsby",
+    "url": "https://gatsby-dot-ruben-oostinga-speeltuin.appspot.com/",
     "metrics": {
       "test_id": "180727_SQ_0d4e189aeeb94e604ec1efd75bce1658",
       "timezone": "UTC",

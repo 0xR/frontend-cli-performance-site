@@ -10,6 +10,7 @@ const fetchConfig = {
 const getSiteApiUrl = id => `https://api.speedcurve.com/v1/urls/${id}`;
 const mapUrlTests = url => ({
   label: url.label,
+  url: url.url,
   metrics: {
     ...url.tests[url.tests.length - 1]
   }
