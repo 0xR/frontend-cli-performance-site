@@ -40,10 +40,5 @@ then
     echo "Skipping deploy, hash ${HASH} already built for service ${SERVICE}"
 else
     cd "${PACKAGE_DIR}"
-    
-    # Run build
-    npm install
-    npm run build
-
     gcloud -q app deploy --version "${VERSION}"
 fi
