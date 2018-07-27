@@ -38,11 +38,13 @@
                     <tbody>
                         <template is="dom-repeat" as="test" items="[[report]]">
                             <tr>
-                                <td>[[test.label]]</td>
-                                <td>[[test.metrics.first_meaningful_paint]]</td>
-                                <td>[[test.metrics.visually_complete]]</td>
-                                <td>[[test.metrics.first_interactive]]</td>
-                                <td>[[test.metrics.loaded]]</td>
+                                <td>
+                                    <a href="[[test.url]]">[[test.label]]</a>
+                                </td>
+                                <td>[[_getTimeInMillis(test.metrics.first_meaningful_paint)]]</td>
+                                <td>[[_getTimeInMillis(test.metrics.visually_complete)]]</td>
+                                <td>[[_getTimeInMillis(test.metrics.first_interactive)]]</td>
+                                <td>[[_getTimeInMillis(test.metrics.loaded)]]</td>
                             </tr>
                         </template>
                     </tbody>
@@ -50,9 +52,9 @@
             </template>
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer ">
             Made with ❤️ @
-            <a href="https://xebia.com/">Xebia</a>
+            <a href="https://xebia.com/ ">Xebia</a>
         </footer>
     </template>
 
@@ -79,21 +81,9 @@
                 };
             }
 
-            _getMetricsDescriptions() {
-                return this.report[Object.keys(this.report)[0]].metrics
-                    .map(({ description }) => description);
-            }
-
-            _getKeys(change) {
-                return Object.keys(change.base);
-            }
-
-            _itemByKey(change, key, path) {
-                return this.get(path, change.base[key]);
-            }
-
-            _getHref(stack) {
-                return `https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`;
+            _getTimeInMillis(millis) {
+                if (!millis || millis === 0) return 'no data';
+                return `${millis} ms`;
             }
         }
 
