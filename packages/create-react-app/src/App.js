@@ -27,7 +27,7 @@ export default class App extends React.Component {
                   <td />
                   <td>First meaningful paint</td>
                   <td>Visually complete</td>
-                  <td>Time to intefractive</td>
+                  <td>Time to interactive</td>
                   <td>Loaded</td>
                 </tr>
               </thead>
