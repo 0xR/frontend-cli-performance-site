@@ -1,2 +1,5 @@
 yarn-error.log
 npm-debug.log
+node_modules/
+packages/polymer-2-application/bower_components/
+
