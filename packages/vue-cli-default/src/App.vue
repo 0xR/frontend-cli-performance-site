@@ -2,7 +2,7 @@
 
     <main>
       <header class="main-header">
-        <img src="logo.svg" alt="Xebia" />
+        <img src="marc-olivier-jodoin-291607-unsplash.jpg" alt="cars" className="hero-image" />
         <h1>CLI performance metrics</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -13,8 +13,6 @@
 
       <Table :report="report" />
     </main>
-
-
 </template>
 
 <script>
@@ -40,5 +38,8 @@
 <style>
   div {
     height: 100%;
+  }
+  p {
+    width: 800px;
   }
 </style>
