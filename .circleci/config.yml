@@ -38,6 +38,9 @@ jobs:
     <<: *deploy-steps
   vue-cli-simple-with-prettier:
     <<: *deploy-steps
+  gatsby:
+    <<: *deploy-steps
+
 
 workflows:
   version: 2
@@ -50,4 +53,5 @@ workflows:
       - vue-cli-default
       - vue-cli-nuxt
       - vue-cli-simple-with-prettier
+      - gatsby
 
