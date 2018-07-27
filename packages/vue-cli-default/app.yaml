@@ -3,8 +3,10 @@ env: standard
 service: vue-cli-default
 
 handlers:
-- url: /.*
-  static_dir: dist
 - url: /
-  static_files: index.html
+  static_files: dist/index.html
   upload: dist/index.html
+
+- url: /(.*)
+  static_files: dist/\1
+  upload: dist/(.*)
