@@ -11,97 +11,92 @@
                 flex-direction: column;
             }
         </style>
-        <iron-ajax
-                auto
-                url="/src/report.json"
-                last-response="{{report}}"
-        >
+        <iron-ajax auto url="/src/report.json" last-response="{{report}}">
         </iron-ajax>
         <main>
+            <img src="images/marc-olivier-jodoin-291607-unsplash.jpg" alt="cars" className="hero-image" />
             <header class="main-header">
                 <h1>CLI performance metrics</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem.
                 </p>
             </header>
 
             <template is="dom-if" if="[[report]]">
                 <table class="measurement-table">
                     <thead>
-                    <tr>
-                        <td></td>
-                        <template is="dom-repeat" as="mestricDescription" items="{{_getMetricsDescriptions()}}">
-                            <td>[[mestricDescription]]</td>
-                        </template>
-                    </tr>
+                        <tr>
+                            <td />
+                            <td>First meaningful paint</td>
+                            <td>Visually complete</td>
+                            <td>Time to interactive</td>
+                            <td>Loaded</td>
+                        </tr>
                     </thead>
                     <tbody>
-                    <template is="dom-repeat" as="stack" items="{{_getKeys(report.*)}}">
-                        <tr>
-                            <td>
-                                <a href="[[_getHref(stack)]]">
-                                    [[_itemByKey(report.*, stack, 'name')]]
-                                </a>
-                            </td>
-                            <template is="dom-repeat" as="metric" items="{{_itemByKey(report.*, stack, 'metrics')}}">
-                                <td>[[metric.displayValue]]</td>
-                            </template>
-                        </tr>
-                    </template>
+                        <template is="dom-repeat" as="test" items="[[report]]">
+                            <tr>
+                                <td>[[test.label]]</td>
+                                <td>[[test.metrics.first_meaningful_paint]]</td>
+                                <td>[[test.metrics.visually_complete]]</td>
+                                <td>[[test.metrics.first_interactive]]</td>
+                                <td>[[test.metrics.loaded]]</td>
+                            </tr>
+                        </template>
                     </tbody>
                 </table>
             </template>
         </main>
 
         <footer class="main-footer">
-            Made with ❤️ @ <a href="https://xebia.com/">Xebia</a>
+            Made with ❤️ @
+            <a href="https://xebia.com/">Xebia</a>
         </footer>
     </template>
 
     <script>
-      /**
-       * @customElement
-       * @polymer
-       */
-      class Polymer2ApplicationApp extends Polymer.Element {
-        static get is() {
-          return 'polymer-2-application-app';
-        }
-
-        static get properties() {
-          return {
-            properties: {
-              measurements: {
-                type: Array
-              },
-              tableContents: {
-                type: Array
-              }
+        /**
+         * @customElement
+         * @polymer
+         */
+        class Polymer2ApplicationApp extends Polymer.Element {
+            static get is() {
+                return 'polymer-2-application-app';
             }
-          };
+
+            static get properties() {
+                return {
+                    properties: {
+                        measurements: {
+                            type: Array
+                        },
+                        tableContents: {
+                            type: Array
+                        }
+                    }
+                };
+            }
+
+            _getMetricsDescriptions() {
+                return this.report[Object.keys(this.report)[0]].metrics
+                    .map(({ description }) => description);
+            }
+
+            _getKeys(change) {
+                return Object.keys(change.base);
+            }
+
+            _itemByKey(change, key, path) {
+                return this.get(path, change.base[key]);
+            }
+
+            _getHref(stack) {
+                return `https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`;
+            }
         }
 
-        _getMetricsDescriptions() {
-          return this.report[Object.keys(this.report)[0]].metrics
-            .map(({ description }) => description);
-        }
-
-        _getKeys(change) {
-          return Object.keys(change.base);
-        }
-
-        _itemByKey(change, key, path) {
-          return this.get(path, change.base[key]);
-        }
-
-        _getHref(stack) {
-          return `https://${stack}-dot-ruben-oostinga-speeltuin.appspot.com`;
-        }
-      }
-
-      window.customElements.define(Polymer2ApplicationApp.is, Polymer2ApplicationApp);
+        window.customElements.define(Polymer2ApplicationApp.is, Polymer2ApplicationApp);
     </script>
 </dom-module>

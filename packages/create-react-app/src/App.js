@@ -2,14 +2,17 @@ import React from 'react';
 import image from './marc-olivier-jodoin-291607-unsplash.jpg';
 
 export default class App extends React.Component {
-  state = { report: null }
+  state = { report: null };
 
-  componentDidMount = () => fetch("report.json").then(res => res.json()).then(report => this.setState({ report }))
+  componentDidMount = () =>
+    fetch('report.json')
+      .then(res => res.json())
+      .then(report => this.setState({ report }));
 
-  formatNumber = number => number ? number.toLocaleString() + " ms" : "null"
+  formatNumber = number => (number ? number.toLocaleString() + ' ms' : 'null');
 
   render() {
-    const { report } = this.state
+    const { report } = this.state;
     return (
       <div>
         <header className="main-header">
@@ -20,28 +23,33 @@ export default class App extends React.Component {
           {report && (
             <table className="measurement-table">
               <thead>
-              <tr>
-                <td />
-                <td>First meaningful paint</td>
-                <td>visually_complete</td>
-                <td>first_interactive</td>
-                <td>loaded</td>
-              </tr>
+                <tr>
+                  <td />
+                  <td>First meaningful paint</td>
+                  <td>Visually complete</td>
+                  <td>Time to intefractive</td>
+                  <td>Loaded</td>
+                </tr>
               </thead>
               <tbody>
-              {report.map(test => <tr key={test.label}>
-                <td>{test.label} ms</td>
-                <td>{this.formatNumber(test.metrics.first_meaningful_paint)}</td>
-                <td>{this.formatNumber(test.metrics.visually_complete)}</td>
-                <td>{this.formatNumber(test.metrics.first_interactive)}</td>
-                <td>{this.formatNumber(test.metrics.loaded)}</td>
-              </tr>)}
+                {report.map(test => (
+                  <tr key={test.label}>
+                    <td>{test.label} ms</td>
+                    <td>
+                      {this.formatNumber(test.metrics.first_meaningful_paint)}
+                    </td>
+                    <td>{this.formatNumber(test.metrics.visually_complete)}</td>
+                    <td>{this.formatNumber(test.metrics.first_interactive)}</td>
+                    <td>{this.formatNumber(test.metrics.loaded)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           )}
         </main>
         <footer className="main-footer">
-          Made with <span role="img">❤</span>️ @ <a href="https://xebia.com/">Xebia</a>
+          Made with <span role="img">❤</span>️ @{' '}
+          <a href="https://xebia.com/">Xebia</a>
         </footer>
         <style>{`
       main {
