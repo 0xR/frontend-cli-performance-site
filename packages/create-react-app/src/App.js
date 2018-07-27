@@ -34,7 +34,7 @@ export default class App extends React.Component {
               <tbody>
                 {report.map(test => (
                   <tr key={test.label}>
-                    <td>{test.label} ms</td>
+                    <td>{test.label}</td>
                     <td>
                       {this.formatNumber(test.metrics.first_meaningful_paint)}
                     </td>
