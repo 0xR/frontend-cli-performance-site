@@ -25,7 +25,7 @@
     props: ['report'],
     methods: {
       formatNumber: function (number) {
-         return number ? number.toLocaleString() + ' ms' : 'null'
+         return number ? number.toLocaleString() + ' ms' : 'no data'
       }
     }
   };

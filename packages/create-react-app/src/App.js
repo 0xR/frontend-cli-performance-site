@@ -9,7 +9,7 @@ export default class App extends React.Component {
       .then(res => res.json())
       .then(report => this.setState({ report }));
 
-  formatNumber = number => (number ? number.toLocaleString() + ' ms' : 'null');
+  formatNumber = number => (number ? number.toLocaleString() + ' ms' : 'no data');
 
   render() {
     const { report } = this.state;
